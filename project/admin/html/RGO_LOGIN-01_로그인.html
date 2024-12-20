@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자페이지 - 신청서 버전</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../js/jquery-ui-1.13.2/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/fontset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/org_u.css">
+    <link rel="stylesheet" href="../css/new_style.css">
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/gnb.js"></script>
+    <script src="../js/snb.js"></script>
+    <script src="../js/search_area.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+
+<body class="bg-eee">
+    <header class="header"></header>
+
+    <div class="wrapper">
+        <section class="login-container">
+            <div class="login-inner DIS-FLEX">
+                <div class="login-visual"><img src="../img/bg/login_visual.png"></div>
+                <div class="login-form">
+                    <div class="input-title">
+                        <h1><img src="../img/logo/logo_1.png"></h1>
+                    </div>
+                    <div class="input-box DIS-FLEX">
+                        <form name="login_input_form">
+                            <strong>LOGIN</strong>
+                            <input type="text" name="" class="input-id" placeholder="아이디를 입력해주세요.">
+                            <input type="password" name="" class="input-pwd" placeholder="비밀번호를 입력해주세요.">
+                            <input type="password" name="" class="input-otp" placeholder="OTP번호 6자리를 입력해주세요.">
+                            <button class="btn-fill" type="button" onclick="location.href='RGO_APL_01_신청서_작성.html'">로그인 하기</button>
+                        </form>
+                        
+
+                        <!-- RGO-PWD-P-001 비밀번호 찾기 -->
+                        <!-- RGO-PWD-P-002 비밀번호 찾기 민간검정 담당자, 전화번호 확인요청 -->
+                        <!-- RGO-PWD-P-003 비밀번호 변경 -->
+                        <!-- RGO_LOGIN-P-001 회원가입 -->
+                        
+
+                        <div class="login-side DIS-FLEX">
+                            <a href="#none" onclick="openPop('layer','RGO-ID-SEARCH')">ID찾기</a>
+                            <span class="gray-bar"></span>
+                            <a href="#none" onclick="openPop('layer','RGO-PWD-P-001')">비밀번호 찾기</a>
+                            <span class="gray-bar"></span>
+                            <a href="#none" onclick="openPop('layer','RGO_LOGIN-P-001')">회원가입</a>
+                        </div>
+
+                        <!--RGO_USER_01_회원가입_페이지1단계.html-->
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+
+    </footer>
+
+
+
+
+<!-- popup start-->
+
+<!-- RGO-ID-SEARCH ID 찾기-->
+<div class="popup_layer popup_alert" id="RGO-ID-SEARCH">
+    <div class="popup_inner alert_window_bg">
+        <div class="popup_statusbar">              
+            <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','RGO-ID-SEARCH'); return false;"></button>
+        </div>
+        <div class="popup_contents">
+            <div class="title_wrap article_title_wrap">
+                <h4 class="popup_table_title one_row_bar">ID 찾기</h4>
+            </div>
+
+            <div class="popup_title_wrap">
+                <h4>이름을 입력해 주세요.</h4>
+            </div> 
+
+            <div class="wrap_group">
+                <input type="text" class="" placeholder="담당자 이름을 입력해 주세요." value="">
+            </div>   
+           
+            <div class="popup_title_wrap">
+                <h4>연락처를 입력해주세요.</h4>
+            </div> 
+            <div class="wrap_group">
+                <input type="text" class="" placeholder="담당자 연락처를 입력해주세요." value="">
+            </div>                
+            
+            <div class="popup_btn alert_pop_btn_wrap">
+                <button type="button" class="action_btn btn-fill" onclick="closePop('layer','RGO-ID-SEARCH'); return false;">조회</button>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<!-- RGO-PWD-P-001 비밀번호찾기 -->
+<div class="popup_layer popup_alert" id="RGO-PWD-P-001">
+    <div class="popup_inner alert_window_bg">
+        <div class="popup_statusbar">              
+            <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','RGO-PWD-P-001'); return false;"></button>
+        </div>
+        <div class="popup_contents">
+            <div class="title_wrap article_title_wrap">
+                <h4 class="popup_table_title one_row_bar">비밀번호 찾기</h4>
+            </div>
+
+            <div class="popup_title_wrap">
+                <h4>ID를 입력해 주세요.</h4>
+            </div> 
+
+            <div class="wrap_group">
+                <input type="text" class="" placeholder="담당자 ID를 입력해 주세요." value="">
+            </div>   
+           
+            <div class="popup_title_wrap">
+                <h4>이름을 입력해주세요.</h4>
+            </div> 
+            <div class="wrap_group">
+                <input type="text" class="" placeholder="담당자 이름을 입력해주세요." value="">
+            </div>    
+
+            <div class="popup_title_wrap">
+                <h4>전화번호를 입력해주세요.</h4>
+            </div> 
+            <div class="wrap_group">
+                <input type="text" class="" placeholder="담당자 전화번호를 입력해주세요." value="">
+            </div>  
+            
+            
+            <div class="popup_btn alert_pop_btn_wrap">
+                <button type="button" class="action_btn btn-fill">조회</button>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<!-- RGO-PWD-P-02 비밀번호 유관기관 담당자 ID 이름 전화번호 조회 실패 시-->
+<div class="popup_layer popup_alert" id="RGO-PWD-P-002">
+    <div class="popup_inner alert_window_bg">
+        <div class="popup_statusbar">              
+            <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','RGO-PWD-P-002'); return false;"></button>
+        </div>
+        <div class="popup_contents">
+            <div class="title_wrap article_title_wrap">
+                <h4 class="popup_table_title one_row_bar">안내</h4>
+            </div>
+            <div class="alert_text_wrap">
+                <p class="alert_text">ID, 이름, 전화번호를 확인해주세요.</p>                   
+            </div>               
+            <div class="popup_btn alert_pop_btn_wrap">
+                <button type="button" class="action_btn btn-fill">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- RGO-PWD-P-003 비밀번호변경 -->
+<div class="popup_layer popup_alert" id="RGO-PWD-P-003">
+    <div class="popup_inner alert_window_bg">
+        <div class="popup_statusbar">              
+            <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','RGO-PWD-P-003'); return false;"></button>
+        </div>
+        <div class="popup_contents">
+            <div class="title_wrap article_title_wrap">
+                <h4 class="popup_table_title one_row_bar">비밀번호 변경</h4>
+            </div>            
+            <div class="popup_title_wrap">
+                <h4>새로운 비밀번호를 입력해주세요.</h4>
+            </div> 
+            <div class="wrap_group">
+                <input type="text" class="" placeholder="새로운 비밀번호를 입력해주세요." value="">
+            </div>    
+
+            <div class="popup_title_wrap">
+                <h4>새로운 비밀번호를 확인 입력해주세요.</h4>
+            </div> 
+            <div class="wrap_group">
+                <input type="text" class="" placeholder="새로운 비밀번호를 확인 입력해주세요." value="">
+            </div>  
+            
+            
+            <div class="popup_btn alert_pop_btn_wrap">
+                <button type="button" class="action_btn btn-fill" onclick="closePop('layer','RGO-PWD-P-003'); return false;">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- RGO_LOGIN-P-001 회원가입 클릭 시 -->
+<div class="popup_layer popup_alert" id="RGO_LOGIN-P-001">
+    <div class="popup_inner alert_window_bg ui-draggable ui-draggable-handle">
+        <div class="popup_contents">
+            <div class="title_wrap article_title_wrap">
+                <div class="title_logo_box">
+                    <img src="../img/logo/LOGO.png">
+                </div>
+            </div>
+            <div class="alert_text_wrap">
+                <strong class="alert_text_strong">홈페이지 회원가입 안내</strong>
+                <p class="alert_text">
+                    본 시스템의 회원가입은 기관<br>
+                    (기업, 기관, 단체)인 경우 가입 가능합니다.
+                </p>                   
+            </div>               
+            <div class="popup_btn alert_pop_btn_wrap">
+                <button type="button" class="action_btn btn-fill" onclick="closePop('layer','RGO_LOGIN-P-001'); return false;">확인</button>
+                <button type="button" class="action_btn btn-fill" onclick="location.href='RGO_USER_01_회원가입_페이지1단계.html'">회원가입</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+       
+
+    var login001 = $('#RGO-PWD-P-001 .wrap_group input');
+    
+    $('#RGO-PWD-P-001 .alert_pop_btn_wrap button').click(function(){
+        if(login001.val() == "") {
+            openPop('layer','RGO-PWD-P-002');
+        }else{
+            openPop('layer','RGO-PWD-P-003');
+        }
+    })
+
+    $('#RGO-PWD-P-002 .alert_pop_btn_wrap button').click(function(){
+        closePop('layer','RGO-PWD-P-002');
+        openPop('layer','RGO-PWD-P-001');
+    })
+
+    
+</script>
+
+
+<!-- popup end-->
+</body>
+
+</html>

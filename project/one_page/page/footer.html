@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+</head>
+<body>
+<footer id="footer">
+    <div class="footer_inner">
+        <div class="ft_logo"><a href="#none"><img src="../img/top_logo.png"></a></div>
+        <div class="ft_privacy">
+            <ul>
+                <li><a href="#none">이용약관</a></li>
+                <li><a href="#none">개인정보처리방침</a></li>
+            </ul>
+        </div>
+        <div class="ft_info">
+            <address>
+                <p>ADRESS . printing and typesetting industry</p>
+                <p>TEL . 123-456-7890 FAX . 123-456-7890</p>
+                <p>E-MAIL . 123-456-7890@Email.com</p>
+            </address>
+            <p class="copyright">@ <span class="this-year"></span> All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script>
+    //푸터 카피라이트 년도 설정
+    const thisYear = document.querySelector('.this-year');
+        thisYear.textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+/*font_import*/
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v24-latin-regular.eot'); /* IE9 Compat Modes */
+}
+
+
+/*font_import*/
+
+html{
+    font-size: 16px;
+    overflow: overlay;
+}
+
+header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+}
+
+.subject {
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+    margin-bottom: 100px;
+    position: relative;
+}
+.wrap_inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+/*scroll bar design*/
+
+html::-webkit-scrollbar {
+    width: 15px;
+}
+html::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar {
+    width: 15px;
+}
+textarea::-webkit-scrollbar-thumb {
+    background-color: #666;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+textarea::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+/*scroll bar design*/
+
+@media all and (max-width:479px) {
+
+    /* 폰트 */
+    html{
+        font-size: 0.9rem;
+    }
+
+    /*서브페이지 공통*/
+
+    .wrap_inner{
+        padding: 15px;
+    }
+
+    /*서브페이지 공통*/
+
+    html {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    html::-webkit-scrollbar {
+        display: none;
+    }
+    textarea {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    textarea::-webkit-scrollbar {
+        display: none;
+    }
+}

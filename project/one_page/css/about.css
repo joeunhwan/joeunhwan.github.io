@@ -1,0 +1,502 @@
+@charset "UTF-8";
+
+.sec_height{
+    margin: 19.9vh 0;
+}
+/* 소개 */
+
+#story > .wrap_inner > .introduce_inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+#story > .wrap_inner > .introduce_inner > .story_text {
+    width: 45%;
+    align-self: center;
+}
+
+#story > .wrap_inner > .introduce_inner > .story_text > h1 {
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    font-family: 'GmarketSansBold';
+}
+
+#story > .wrap_inner > .introduce_inner > .story_text > h5 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+}
+#story > .wrap_inner > .introduce_inner > .story_text > p {
+    font-family: 'GmarketSansLight';
+    line-height: 1.6;
+}
+
+/*#story > .wrap_inner > .introduce_inner > .story_text > p > span {
+    position: relative;
+}
+
+#story > .wrap_inner > .introduce_inner > .story_text > p > span::before {
+    content: "";
+    width: 100%;
+    height: 7px;
+    background-color: #9fc8ff;
+    opacity: 0.6;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    z-index: -1;
+}*/
+
+#story > .wrap_inner > .introduce_inner > .story_img {
+    width: 50%;
+}
+
+#story > .wrap_inner > .introduce_inner > .story_img > img {
+    width: 100%;
+    display: block;
+}
+
+#story > .wrap_inner > h4.subject::before {
+    content: "";
+    width: 45px;
+    height: 5px;
+    background: #333;
+    position: absolute;
+    display: block;
+    top: 13px;
+    left: 240px;
+}
+
+#story > .wrap_inner > h4.subject::after {
+    content: "01";
+    position: absolute;
+    top: 0px;
+    left: 305px;
+}
+
+/* 비전 & 연혁 */
+
+/*#vision_history {
+    margin: 140px 0;
+}*/
+
+#vision_history > .wrap_inner > h4.subject {
+    position: relative;
+    text-align: right;
+}
+
+#vision_history > .wrap_inner > h4.subject::before {
+    content: "";
+    width: 45px;
+    height: 5px;
+    background-color: #333;
+    position: absolute;
+    top: 13px;
+    right: 405px;
+}
+
+#vision_history > .wrap_inner > h4.subject::after {
+    content: "02";
+    position: absolute;
+    top: 0;
+    right: 480px;
+}
+
+
+/* 비전 */
+
+#vision {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+#vision .vs_box {
+    width: 40%;
+}
+#vision .vs_box img {
+    width: 100%;
+    display: block;
+}
+#vision .vs_box_left {
+    transform: translateX(50px);
+}
+#vision .vs_box_right {
+    transform: translateX(-50px);
+    transform: translateY(50px);
+    background-color: #efefef;
+    box-shadow: 4px 4px 8px rgba(85, 85, 85, 0.2);
+}
+#vision .vs_box_right .vs_text {
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+    border: 5px solid #1d7dc2;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#vision .vs_box_right .vs_text h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'GmarketSansBold';
+}
+#vision .vs_box_right .vs_text span {
+    width: 30px;
+    height: 5px;
+    display: block;
+    margin: 35px auto;
+    background-color: #dedcdc;
+}
+
+#vision .vs_box_right .vs_text p {
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+    font-family: 'GmarketSansLight';
+    line-height: 1.6;
+}
+
+
+/* 연혁 */
+
+#history {
+    display: flex;
+    justify-content: center;
+}
+
+#history > ul {
+    flex: 1;
+    position: relative;
+}
+
+#history > ul::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 95%;
+    border-left: 3px dashed #e7e7e7;
+}
+
+#history > ul > li {
+    position: relative;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+
+#history > ul > li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -48px;
+    width: 20px;
+    height: 20px;
+    background: url('../img/ic_h_dot.png') no-repeat;
+}
+
+#history > ul > li > h4 {
+    font-size: 1.4rem;
+    font-family: 'GmarketSansBold';
+    margin-bottom: 7px;
+}
+
+#history > ul > li > p {
+    font-family: 'GmarketSansLight';
+}
+
+
+/* 클라이언트 & 파트너 */
+
+/*#client_partners {
+    background: #fff;
+    color: #333;
+    padding: 100px 0;
+}*/
+
+#client_partners > .wrap_inner > .items { 
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#client_partners > .wrap_inner > .items > h2 { 
+    font-size: 1.8rem;
+    font-family: 'Montserrat';
+    margin-bottom: 20px;
+}
+
+#client_partners > .wrap_inner > .items .view_set {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#client_partners > .wrap_inner > .items .view_set > li {
+    width: 23%;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    margin: 1%;
+    box-shadow: 4px 4px 8px rgba(68, 68, 68, 0.4);
+}
+
+#client_partners > .wrap_inner > .items .view_set > li > img{
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+}
+
+#client_partners > .wrap_inner > h4.subject {
+    position: relative;
+}
+
+#client_partners > .wrap_inner > h4.subject::before {
+    content: "03";
+    position: absolute;
+    top: 0;
+    left: 355px;
+}
+
+#client_partners > .wrap_inner > h4.subject::after {
+    content: "";
+    width: 45px;
+    height: 5px;
+    background-color: #333;
+    position: absolute;
+    top: 13px;
+    left: 285px;
+}
+
+
+/* 오시는 길 */
+/*.items {
+    overflow: hidden;
+    margin: 100px 0;
+}*/
+
+#location > .wrap_inner > h4.subject {
+    position: relative;
+    text-align: right;
+}
+
+#location > .wrap_inner > h4.subject::before {
+    content: "";
+    width: 45px;
+    height: 5px;
+    background-color: #333;
+    position: absolute;
+    top: 13px;
+    right: 300px;
+}
+
+#location > .wrap_inner > h4.subject::after {
+    content: "04";
+    position: absolute;
+    top: 0;
+    right: 370px;
+}
+
+#location > .wrap_inner > #map {
+    width: 100%;
+    height: 500px;
+}
+
+#location > .wrap_inner > .lc_address {
+    margin-top: 30px;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+#location > .wrap_inner > .lc_address > h4 {
+    font-size: 1.3rem;
+    font-family: 'GmarketSansLight';
+}
+
+#location > .wrap_inner > .lc_address > p {
+    font-family: 'GmarketSansLight';
+}
+
+#location > .wrap_inner > ul {
+    float: right;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+#location > .wrap_inner > ul > li {
+    width: 180px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+}
+
+#location > .wrap_inner > ul > li:nth-child(1) {
+    background: #fbe300;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#location > .wrap_inner > ul > li:nth-child(2) {
+    background: #ededed;
+    border-radius: 10px;
+}
+
+#location > .wrap_inner > ul > li > a {
+    display: inline-block;
+    font-family: 'GmarketSansLight';
+    padding-left: 25px;
+    line-height: 30px;
+}
+
+#location > .wrap_inner > ul > li > a::before {
+    content: "";
+    background: url('../img/ic_kakaomap.png');
+    width: 30px;
+    height: 30px;
+    left: -10px;
+    position: absolute;
+}
+
+#location > .wrap_inner > ul > li:nth-child(2) > a::before {
+    background: url('../img/ic_gmap.png');
+}
+
+
+
+
+
+/* 미디어 쿼리 */
+/* PC , 테블릿 가로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {}
+
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {}
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+@media all and (min-width:480px) and (max-width:767px) {}
+
+/* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/
+@media all and (max-width:479px) {
+
+    /* 서브 제목 */
+    #story > .wrap_inner > h4.subject::before, 
+    #story > .wrap_inner > h4.subject::after,
+    #profile > .wrap_inner > h4.subject::before, 
+    #profile > .wrap_inner > h4.subject::after,
+    #vision_history > .wrap_inner > h4.subject::before, 
+    #vision_history > .wrap_inner > h4.subject::after,
+    #client_partners > .wrap_inner > h4.subject::before, 
+    #client_partners > .wrap_inner > h4.subject::after,
+    #location > .wrap_inner > h4.subject::before, 
+    #location > .wrap_inner > h4.subject::after {
+        display: none;
+    }
+
+    #story > .wrap_inner > h4.subject,
+    #profile > .wrap_inner > h4.subject,
+    #vision_history > .wrap_inner > h4.subject,
+    #client_partners > .wrap_inner > h4.subject,
+    #location > .wrap_inner > h4.subject {
+        text-align: center;
+    }
+
+    /* story */
+    #story > .wrap_inner > .introduce_inner {
+        flex-direction: column-reverse;
+    }
+    #story > .wrap_inner > .introduce_inner > .story_text {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #story > .wrap_inner > .introduce_inner > .story_img {
+        width: 100%;
+    }
+
+    /* profile */
+    #profile > .wrap_inner > .content_wrap {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #profile > .wrap_inner > .content_wrap > .profile_content {
+        margin: auto;
+        height: 230px;
+        width: 45%;
+        flex-basis: 45%;
+    }
+    #profile > .wrap_inner > .content_wrap > .profile_content:nth-child(2) {
+        flex-basis: 45%;
+        height: 230px;
+        font-size: 1rem;
+    }
+    #profile > .wrap_inner > .content_wrap > .profile_content > img {
+        width: 70px;
+        height: 70px;
+    }
+    #profile > .wrap_inner > .content_wrap > .profile_content:nth-child(2) > img {
+        width: 70px;
+        height: 70px;
+    }
+    #profile > .wrap_inner > .content_wrap > .profile_content:nth-child(2) > h4 {
+        font-size: 1.5rem;
+    }
+    #profile > .wrap_inner > .content_wrap > .profile_content > p {
+        padding: 0 5px;
+    }
+    #profile > .wrap_inner > .content_wrap > .profile_content:nth-child(3) {
+        margin-top: 20px;
+    }
+
+    /* vision */
+    #vision {
+        margin-bottom: 100px;
+    }
+    #vision .vs_box {
+        width: 100%;
+    }
+    #vision .vs_box_left {
+        transform: translateX(15px);
+    }
+    #vision .vs_box_right {
+        transform: translate(-15px, 30px);
+    }
+    #vision .vs_box_right .vs_text {
+        width: 90%;
+        height: 90%;
+        margin: 5%;
+        padding: 5%;   
+    }
+    #vision .vs_box_right .vs_text h4 {
+        font-size: 1.3rem;
+    }
+    #vision .vs_box_right .vs_text span {
+        margin: 10px auto;
+    }
+    #vision .vs_box_right .vs_text p {
+        width: 100%;    
+    }
+
+    /* history */
+    #history {
+        flex-direction: column;
+    }
+
+    /* client & partner */
+    #client_partners > .wrap_inner > .items .view_set > li {
+        width: 48%;
+    }
+
+    /* location */
+    #location > .wrap_inner > #map {
+        height: 400px;
+    }
+    #location > .wrap_inner > .lc_address {
+        margin-left: unset;
+    }
+    #location > .wrap_inner > ul {
+        float: none;
+        margin-right: unset;
+    }
+    #location > .wrap_inner > ul > li {
+        width: 98%;
+    }
+}

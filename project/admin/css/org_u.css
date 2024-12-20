@@ -1,0 +1,474 @@
+@charset "UTF-8";
+body{
+  background-color: #fff;
+}
+.bg-eee{
+  background-color: #eee !important;
+}
+input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+input, textarea, pre {
+  line-height: 1.2;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0 10px;
+}
+input:focus{
+  color: #333;
+}
+input::placeholder{
+  color: #bebebe;
+}
+.btn-fill{
+  background-color: #415C89;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.btn-line{
+  background-color: #fff;
+  border: 1px solid #415C89;
+  color: #333;
+  font-size: 1rem;
+  border-radius: 5px
+}
+.btn-fill-blk{
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.gray-bar{
+  display: block;
+  width: 1px;
+  height: 15px;
+  margin: 0 15px;
+  background-color: #ddd;
+}
+
+.alert_text_wrap{
+  margin: 10% 0;
+}
+
+.contents-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3%;
+}
+
+
+
+/*로그인페이지*/
+
+/*로그인페이지*/
+
+.login-wrapper{
+  background-color: #efefef;
+  height: auto !important;
+  min-height: 100%;
+}
+header{
+  background: #fff;
+}
+header .login-head-container{
+  border-bottom: 1px solid #ddd;
+}
+header .login-head-container .logo{
+  height: auto;
+  width: 10%;
+  min-width: 210px;
+}
+.login-container{
+  padding: 3%;
+}
+.login-container .login-inner{
+  padding: 4%;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.login-container .login-inner .login-visual{
+  width: 60%;
+  align-self: center;
+}
+.login-container .login-inner .login-form{
+  width: 35%;
+  align-self: center;
+}
+.login-container .login-inner .login-form .input-title{
+  width: 65%;
+  margin: 0 auto;
+}
+.login-container .login-inner .login-form h1{
+  letter-spacing: 0;
+}
+.login-container .login-inner .login-form h2{
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0;
+}
+.login-container .login-inner .login-form .input-box{
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.login-container .login-inner .login-form .input-box strong{
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 35px;
+  letter-spacing: 0;
+}
+.login-container .login-inner .login-form .input-box input{
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 6px;
+  padding-left: 40px;
+}
+.login-container .login-inner .login-form .input-box .btn-fill{
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 15px 0;
+}
+.login-container .login-inner .login-form .input-box .login-side{
+  margin-top: 15px;
+  justify-content: center;
+}
+.login-container .login-inner .login-form .input-box .login-side a{
+  width: unset;
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+.login-container .login-inner .login-form .input-box .input-id{
+  background-image: url("../img/icon/login_id.png");
+  background-size: 17px;
+  background-position: 12px center;
+  background-repeat: no-repeat;
+  min-height: 50px;
+  font-size: 1.2rem;
+}
+.login-container .login-inner .login-form .input-box .input-pwd{
+  background-image: url("../img/icon/login_pw.png");
+  background-size: 17px;
+  background-position: 12px center;
+  background-repeat: no-repeat;
+  min-height: 50px;
+  font-size: 1.2rem;
+}
+.login-container .login-inner .login-form .input-box .input-otp{
+  background-image: url("../img/icon/login_otp.png");
+  background-size: 17px;
+  background-position: 12px center;
+  background-repeat: no-repeat;
+  min-height: 50px;
+  font-size: 1.2rem;
+}
+.login-container .login-inner .login-form .btn-fill{
+  background-color: #415C89;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+/*유관기관 회원가입 1단계*/
+.RGO_USER_ .title-box{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.RGO_USER_ .title-box .title-main{
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.RGO_USER_ .title-box .title-sub-p{
+  font-size: 1rem;
+  color: #a3a3a3;
+}
+.RGO_USER_ .join-process{
+  width: 70%;
+  margin: 3% auto;
+}
+.RGO_USER_ .join-process ul li{
+  flex: 1;
+  text-align: center;
+  padding: 3%;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  border-right: 0;
+}
+.RGO_USER_ .join-process ul li:last-child{
+  border-right: 1px solid #ddd;
+}
+.RGO_USER_ .join-process ul .on{
+  background-color: #415C89;
+  color: #fff;
+}
+.RGO_USER_ .join-text-wrap{
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2%;
+}
+.RGO_USER_ .join-text-wrap h4{
+  font-size: 1.3rem;
+    font-weight: bold;
+}
+.RGO_USER_ .join-text-wrap .join-text-all-chk{
+  display: flex;
+  margin-bottom: 2%;
+  justify-content: flex-end;
+  padding: 2%;
+  background-color: #F5F5F5;
+}
+.RGO_USER_ .join-text-wrap .join-text-all-chk label{
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #222;
+  margin-left: 10px;
+}
+.RGO_USER_ .join-text-all-chk .join-textarea{
+  border: none;
+}
+.RGO_USER_ .desc-p{
+  line-height: 1.3;
+  font-size: 1rem;
+  width: 95%;
+  margin: 0 auto;
+}
+.RGO_USER_ .join-text-wrap .join-text-each-chk .join-text-each-box{
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2%;
+  padding: 2% 2%;
+  background-color: #F5F5F5;
+}
+.RGO_USER_ .join-text-each-input label{
+  vertical-align: super !important;
+  margin: 0 5px;
+}
+.RGO_USER_ .join-textarea{
+  margin-bottom: 2%;
+}
+.RGO_USER_ .join-textarea textarea{
+  min-height: 400px !important;
+  cursor: default;
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+.RGO_USER_ .wrap_table_btn{
+  text-align: right;
+}
+.RGO_USER_ .wrap_table_btn button{
+  font-size: 1rem;
+}
+/*유관기관 회원가입 1단계*/
+
+/*유관기관 회원가입 2단계*/
+.join-input-wrap{
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 2%;
+}
+.join-input-wrap .join-input-box{
+  display: flex;
+  align-items: center;
+}
+.join-input-wrap .join-input-box .join-input-label{
+  flex-shrink: 0;
+  min-width: 100px;
+}
+.join-input-wrap .join-input-box input[type=text]{
+  max-width: 220px;
+  padding: 0 15px;
+  margin: 0 10px;
+  height: 34px;
+}
+.join-input-wrap .join-input-box input[type=password]{
+  max-width: 220px;
+  padding: 0 15px;
+  margin: 0 10px;
+  height: 34px;
+}
+.join-input-wrap .join-input-box input[type=email]{
+  max-width: 220px;
+  padding: 0 15px;
+  margin: 0 10px;
+  height: 34px;
+}
+.join-input-wrap .join-input-box input[type=radio]{
+  height: 15px;
+  width: 15px;
+  vertical-align: middle;
+}
+.join-input-wrap .join-input-box select{
+  max-width: 220px;
+  padding: 0 15px;
+  margin: 0 10px;
+}
+.join-input-wrap .join-input-box p{
+  margin: 0 10px;
+}
+.join-input-wrap .join-input-box button{
+  height: 34px;
+  padding: 0 2%;
+}
+.join-input-wrap .join-input-box select{
+  max-width: 220px;
+  width: 100%;
+}
+.join-input-wrap .join-input-box .pass-span{
+  color: #c7c7c7;
+  font-size: 1rem;
+}
+.join-input-wrap .join-inner-h4{
+  margin: 2% 0;
+  display: flex;
+  align-items: center;
+}
+.join-input-wrap .join-inner-h4::after{
+  content: "";
+  width: 70%;
+  height: 1px;
+  margin-left: 25px;
+  background-color: #c7c7c7;
+}
+.RGO_USER_ .wrap_table_btn button:first-child{
+  margin-right: 10px;
+}
+/*유관기관 회원가입 2단계*/
+
+
+/*유관기관 회원가입 3단계*/
+.RGO_USER_ .join-success-box{
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+}
+.RGO_USER_ .join-success-box .join-success-text{
+  font-weight: unset;
+}
+.RGO_USER_ .join-success-box .join-success-text:last-child{
+  color: #415C89;
+}
+.RGO_USER_ .center-btn{
+  margin-right: 0;
+  text-align: center !important;
+}
+/*유관기관 회원가입 3단계*/
+
+
+
+
+/*popup*/
+
+.input-container{
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 25%;
+}
+.input-title-box{
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 110px;
+  height: 100%;
+  padding-left: 25px;
+}
+.input-box{
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #222;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+.input-title{
+  font-size: 14px;
+  color: #222;
+  line-height: 1.3;
+  font-family: "NotoSansMedium", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.input-p-type{
+  font-size: 14px;
+  color: #222;
+  line-height: 1.3;
+  font-family: "NotoSansMedium", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+#RGO-PWD-P-001 .wrap_group{
+  margin-bottom: 30px;
+}
+#RGO-PWD-P-003 .wrap_group{
+  margin-bottom: 30px;
+}
+.title_logo_box{
+  width: 80%;
+  margin: 0 auto;
+}
+.alert_text_strong{
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.alert_text{
+  line-height: 1.1;
+}
+#RGO-ID-SEARCH .wrap_group {
+  margin-bottom: 30px;
+}
+
+
+
+@media all and (min-width:768px) and (max-width:1250px) {
+  .login-container .login-inner .login-form .input-title{
+    margin-bottom: 15px;
+  }
+  .login-container .login-inner .login-form h1{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .login-container .login-inner .login-form .input-box strong{
+    font-size: 1.4rem;
+  }
+  .login-container .login-inner .login-form .input-box .input-id{
+    font-size: 0.9rem;
+  }
+  .login-container .login-inner .login-form .input-box .input-pwd{
+    font-size: 0.9rem;
+  }
+  .login-container .login-inner .login-form .input-box .input-otp{
+    font-size: 0.9rem;
+  }
+  .login-container .login-inner .login-form .input-box .login-side a{
+    font-size: 0.9rem;
+  }
+}
+
+

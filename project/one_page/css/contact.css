@@ -1,0 +1,163 @@
+#contact{
+  width: 100%;
+}
+#contact .contact_wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#contact .contact_wrap .contact_inner{
+  margin: 19.9vh 0;
+}
+
+button, input, textarea {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+#contact .contact_wrap .contact_inner .recruit{
+  text-align: center;
+  font-family: 'GmarketSansMedium';
+}
+
+#contact .contact_wrap .contact_inner .recruit .recruit_title h2{
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+#contact .contact_wrap .contact_inner .recruit .recruit_title h2 span{
+  color: #4387f0;
+}
+
+#contact .contact_wrap .contact_inner .recruit .recruit_title p{
+  font-size: 1.5rem;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  font-family: 'GmarketSansLight';
+}
+
+#contact .contact_wrap .contact_inner .recruit .recruit_box {
+  margin: 5% 0;
+}
+
+#contact .contact_wrap .contact_inner .recruit .recruit_box ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact .contact_wrap .contact_inner .recruit .recruit_box ul li{
+  width: 23%;
+  padding: 4%;
+  border: 1px solid #dfdfdf;
+  border-radius: 15px;
+}
+
+#contact .contact_wrap .contact_inner .recruit .recruit_box ul li strong{
+  font-size: 1.5rem;
+  display: block;
+  margin: 30px 0 15px 0;
+  color: #4387f0;
+}
+
+#contact .contact_wrap .contact_inner .recruit .recruit_box ul li p{
+  font-family: 'GmarketSansLight';
+}
+
+#contact .contact_wrap .contact_inner .recruit .recruit_box ul li img{
+  display: block;
+  margin: 0 auto;
+}
+
+#contact .contact_wrap .contact_inner .recruit_infomation{
+  margin: 19.9vh 0;
+  font-family: 'GmarketSansLight';
+}
+
+#contact .contact_wrap .contact_inner .recruit_infomation h2{
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+  font-family: 'GmarketSansMedium';
+  border-bottom: 1px solid #666;
+  padding-bottom: 10px;
+}
+#contact .contact_wrap .contact_inner .recruit_infomation .recruit_table{
+  border-collapse: separate;
+  border-spacing: 0 30px;
+}
+
+#contact .contact_wrap .contact_inner .recruit_infomation .recruit_table th{
+  font-size: 2rem;
+  width: 20%;
+  text-align: left;
+  font-family: 'GmarketSansMedium';
+}
+
+#contact .contact_wrap .contact_inner .recruit_infomation .recruit_table td{
+  font-size: 1.4rem;
+  margin-right: auto;
+  align-self: center;
+}
+
+#contact .contact_wrap .contact_inner .form_screen .contact_box h2{
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+  font-family: 'GmarketSansMedium';
+  border-bottom: 1px solid #666;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+#contact .contact_wrap .contact_inner .form_screen .contact_box form{
+  margin: 5% 0;
+}
+
+#contact .contact_wrap .contact_inner .form_screen .contact_box .pure-group input,textarea {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  font-size: 1rem;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+  margin-bottom: 40px;
+}
+
+#contact .contact_wrap .contact_inner .form_screen .contact_box .pure-group input::placeholder,textarea::placeholder {
+  color: #333;
+}
+
+#contact .contact_wrap .contact_inner .form_screen .contact_box .pure-group input:focus,textarea:focus {
+  border-bottom-color: #efefef;
+  color: #888;
+}
+
+#contact .contact_wrap .contact_inner .form_screen .contact_box .pure-group textarea{
+  display: block;
+  margin-bottom: 40px;
+}
+
+.pure-button {
+  background: #fff;
+  color: #4387f0;
+  border: 1px solid #4387f0;
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 2% 4%;
+  transition: all 0.3s linear;
+  width: 80%;
+  margin: 40px auto 0;
+  display: block;
+}
+
+.pure-button:hover {
+  color: #fff;
+  background: #4387f0;
+}
+.thankyou_message{
+  font-family: 'GmarketSansMedium';
+  font-size: 2rem;
+}

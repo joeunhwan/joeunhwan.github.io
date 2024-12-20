@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자페이지 - 신청서 버전</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../js/jquery-ui-1.13.2/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/fontset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/new_style.css">
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/gnb.js"></script>
+    <script src="../js/snb.js"></script>
+    <script src="../js/search_area.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="gnb_top"></div>
+    </header>
+
+    <div class="wrapper">     
+        <div class="wrap_contents RGO_APL_01">     
+            <nav class="nav_snb snb_RGO_APL_MENU"></nav>          
+            <div class="contents">
+                <h2 class="page_title">신청</h2>
+                <!-- page content start  -->
+                <div class="wrap_breadcrumb">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs_item"><a href="javascript:;" class="breadcrumbs_home"></a></li>
+                        <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth01">신청</span></a></li>
+                        <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth02">신청서 작성</span></a></li>
+                        <!-- <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth03"></span></a></li> -->
+                    </ul>
+                </div>               
+                <div class="page_content">
+
+                <!-- 신청 input 마크업 시작  -->
+
+                <form class="table_upper gap_60">
+                    <div class="table_btn btn_thin">
+                        <div class="title_wrap">
+                            <h4 class="popup_table_title double_bullet">신청자 정보</h4> 
+                        </div>
+                        <!-- <div class="table_btn_right table_btn_wrap DIS-FLEX-ALIGN-IT-C">
+                            <input type="checkbox" name="agreeChk01" checked><label for="agreeChk01">로그인 접속 정보와 동일</label>
+                        </div> -->
+                    </div>
+                </form>
+
+                <div class="area_input_group_wrap">
+                    <div class="area_input_group">
+                        <div class="wrap_group">
+                            <div class="input_group_line column1">
+
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label">신청기관</h4>
+                                    </div>
+                                    <div class="box_input">
+                                        <input type="text" class="" placeholder="접속한 ID 기관명 표기">
+                                    </div>
+                                </div>
+
+                                <div class="input_group">
+                                    <div class="box_label">
+                                    <h4 class="input_label must">신청일자</h4>
+                                    </div>
+                                    <div class="box_input">
+                                    <!-- <input type="date"> -->
+                                    <input type="date" class="" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input_group_line column1">
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label">업무구분</h4>
+                                    </div>
+                                    <div class="box_input box_input_select">
+                                        <select class="">
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label">신청자</h4>
+                                    </div>
+                                    <div class="box_input">
+                                        <input type="text" placeholder="등록된 기관의 담당자명 표기">
+                                    </div>
+                                </div>
+                                
+                            </div>
+        
+                            <div class="input_group_line column1">
+                                
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label">전화번호</h4>
+                                    </div>
+                                    <div class="box_input">
+                                        <input type="text" placeholder="등록된 정보 표기">
+                                    </div>
+                                </div>
+
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label">휴대전화</h4>
+                                    </div>
+                                    <div class="box_input">
+                                        <input type="text" placeholder="등록된 정보 표기">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input_group_line column1">
+
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label">팩스번호</h4>
+                                    </div>
+                                    <div class="box_input">
+                                        <input type="text" placeholder="등록된 정보 표기">
+                                    </div>
+                                </div>
+                                <div class="input_group input_no_layout">
+
+                                </div>
+
+                            </div>
+                            <div class="input_group_line column1">
+
+                                <div class="input_group">
+                                    <div class="box_label">
+                                    <h4 class="input_label must">주소</h4>
+                                    </div>
+                                    <div class="box_input box_input_address2">
+                                    <input type="text" class="" placeholder="API검색으로 입력">
+                                    <button type="button" class="btn_search btn_filled_deep_blue">검색</button>
+                                    <input type="text" class="" placeholder="API검색으로 입력">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input_check_line column1">
+                                <input type="checkbox"  name="agreeChk02"><label for="agreeChk02">개인정보 사용 동의</label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="table_upper gap_60">
+                    <div class="table_btn btn_thin">
+                        <div class="title_wrap">
+                            <h4 class="popup_table_title double_bullet">기관 정보</h4>
+                            <p class="title_wrap_sub_p">(기관명이 검색이 안되거나 기관을 모를 경우, 시험 연구소로 문의 바랍니다. 054-429-7873)</p>
+                        </div>
+                    </div>
+                </form>
+                    
+                <div class="area_input_group_wrap">
+                    <div class="area_input_group">
+                        <div class="wrap_group">
+                            <div class="input_group_line column1">
+
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label">기관명</h4>
+                                    </div>
+                                    <div class="box_input">
+                                        <input type="text" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label">부서명</h4>
+                                    </div>
+                                    <div class="box_input">
+                                        <input type="text" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input_group_line column1">
+
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label">담당자명</h4>
+                                    </div>
+                                    <div class="box_input">
+                                        <input type="text" placeholder="">
+                                    </div>
+                                </div>
+
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label">연락처</h4>
+                                    </div>
+                                    <div class="box_input">
+                                        <input type="text" placeholder="">
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="input_check_line column1">
+                                <input type="checkbox" name="agreeChk03"><label for="agreeChk03">담당자와 전화통화를 통하여 신청 가능 여부(신청가능)를 확인 하였습니다.</label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <form class="table_upper gap_60">
+                    <div class="table_btn btn_thin">
+                        <div class="title_wrap">
+                            <h4 class="popup_table_title double_bullet">추가 사항</h4>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="area_input_group_wrap">
+                    <div class="area_input_group">
+                        <div class="wrap_group">
+                            
+                            <div class="input_group_line column1">
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label">1</h4>
+                                    </div>
+                                    <div class="box_input">
+                                        <input type="text" placeholder="" value="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input_group_line column1">
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label">2</h4>
+                                    </div>
+                                    <div class="box_input">
+                                        <input type="text" placeholder="" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="input_group_line column1">
+
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label">3</h4>
+                                    </div>
+                                    <div class="box_input box_input_select">
+                                        <select class="">
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                        <input type="text" class="basis-input" placeholder="" value="">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="input_group_line column1">
+
+                                <div class="input_group">
+                                    <div class="box_label">
+                                        <h4 class="input_label">4</h4>
+                                    </div>
+                                    <div class="box_input box_input_select">
+                                        <select class="">
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                            <option value=""></option>
+                                        </select>
+                                        <input type="text" class="basis-input" placeholder="" value="">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="input_group_line column1">
+                                <div class="input_group">
+                                    <div class="box_label">
+                                    <h4 class="input_label">첨부파일</h4>
+                                    </div>
+                                    <div class="box_input box_attached_list">
+                                    <div class="wrap_table_sticky">
+                                        <table class="table table_list table_sticky">
+                                        <caption>첨부파일정보</caption>
+                                        <colgroup>
+                                            <col style="width: 41px">
+                                            <col style="width: auto">
+                                            <col style="width: 200px">
+                                            <col style="width: 100px">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                            <th scope="col">
+                                                <!-- <input type="checkbox"> -->
+                                            </th>
+                                            <th scope="col">파일명</th>
+                                            <th scope="col">업로드 상태</th>
+                                            <th scope="col">용량</th>
+                                            <!-- <th scope="col"></th> -->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                            <td class="align_center"><button type="button" title="첨부파일 삭제" class="btn_attached_delete" onclick="javascript(); return false;"></button></td>
+                                            <td>첨부파일정보.pptx</td>
+                                            <td></td>
+                                            <td>324.34KB</td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                    </div>
+                                    <button type="button" class="btn_search btn_filled_deep_blue">내 PC</button>
+                                    </div>
+                                </div>
+                                </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                    
+    
+                <!-- 신청 input 마크업 끝  -->      
+
+                <!-- buttons -->
+                <div class="table_btn page_action_btn">
+                    <div class="table_btn_left table_btn_wrap">              
+                    </div>
+                    <div class="table_btn_right table_btn_wrap">
+                    <button type="button" class="action_btn btn_filled_black">취소하기</button>
+                    <button type="button" class="action_btn btn_filled_deep_blue" onclick="nextJoin2()">신청하기</button>                 
+                    </div>
+                </div>
+              <!-- table end -->
+
+
+
+
+
+                </div>
+                <!-- page content end --> 
+            </div>
+        <!-- wrap_contents end -->
+        </div>
+    <!-- wrapper end -->
+    </div>
+         
+
+    <footer class="footer">
+
+    </footer>
+
+<script>
+    function nextJoin2(){
+        var agreeChk02 = document.getElementsByName('agreeChk02')[0];
+        var agreeChk03 = document.getElementsByName('agreeChk03')[0];
+        var is_checked = agreeChk02.checked;
+        var is_checked2 = agreeChk03.checked;
+        var popAlert1 = document.getElementById('popup_alert1');
+        var popAlert2 = document.getElementById('popup_alert2');
+        if ((is_checked && is_checked2) == true){
+            popAlert2.style.display = 'block';
+        }else if((is_checked && is_checked2) == false){
+            popAlert1.style.display = 'block';
+        }
+    }
+
+</script>
+
+
+<!-- popup start-->
+
+
+<!-- RGO_APL_01_외부_유관_신청-신청하기버튼클릭시(오류)_신청 -->
+<div class="popup_layer popup_alert" id="popup_alert1">
+    <div class="popup_inner alert_window_bg">
+        <div class="popup_statusbar">              
+            <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','popup_alert'); return false;"></button>
+        </div>
+        <div class="popup_contents">
+            <div class="alert_text_wrap">
+                    <p class="alert_text">개인 정보 사용 동의를 확인해주세요.</p>                   
+            </div>               
+            <div class="popup_btn alert_pop_btn_wrap">
+                    <button type="button" class="action_btn btn_filled_deep_blue" onclick="closePop('layer','popup_alert'); return false;">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- RGO_APL_01_외부_유관_신청-신청하기버튼 클릭시(정상)_신청  -->
+<div class="popup_layer popup_alert" id="popup_alert2">
+    <div class="popup_inner alert_window_bg">
+        <div class="popup_statusbar">              
+            <button type="button" aria-label="레이어 팝업 닫기" class="popup_close" onclick="closePop('layer','popup_alert'); return false;"></button>
+        </div>
+        <div class="popup_contents">
+            <div class="alert_text_wrap">
+                    <p class="alert_text">작성하신 내용으로 신청 하시겠습니까?</p>
+                    <p class="alert_text alert_description">신청내용을 다시 한번 확인해주세요. ( 신청 내역에서 확인 가능)</p>
+            </div>               
+            <div class="popup_btn alert_pop_btn_wrap">
+                    <button type="button" class="action_btn btn_filled_black cancel_btn" onclick="closePop('layer','popup_alert'); return false;">취소</button>
+                    <button type="button" class="action_btn btn_filled_deep_blue" onclick="location.href='RGO_APL_02_신청_완료.html'">신청하기</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- popup end-->
+</body>
+
+</html>

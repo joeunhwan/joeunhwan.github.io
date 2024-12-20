@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자페이지 - 신청서 버전</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../js/jquery-ui-1.13.2/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/fontset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/new_style.css">
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/gnb.js"></script>
+    <script src="../js/snb.js"></script>
+    <script src="../js/search_area.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="gnb_top"></div>
+    </header>
+
+    <div class="wrapper">     
+        <div class="wrap_contents">     
+            <nav class="nav_snb snb_RGO_APL_MENU"></nav>          
+            <div class="contents">
+                <h2 class="page_title">나의 신청 내역</h2>
+                <!-- page content start  -->
+                <div class="wrap_breadcrumb">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs_item"><a href="javascript:;" class="breadcrumbs_home"></a></li>
+                        <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth01">신청</span></a></li>
+                        <li class="breadcrumbs_item"><a href="javascript:;"><span class="breadcrumbs_depth02">나의 신청 내역</span></a></li>
+                    </ul>
+                </div>               
+                <div class="page_content">
+                    <div class="search_area area_rows_several">
+                        <div class="area_rows_several_wrap">
+                            <div class="several_rows DIS-FLEX-COL">
+                                <div class="search_area_top DIS-FLEX">
+                                    <div class="search_area_left">
+                                        <form class="wrap_input"><span class="search_label">신청일자</span>
+                                            <div>
+                                                <input type="date">
+                                                <span class="tilde">~</span>
+                                                <input type="date">
+                                            </div>
+                                        </form>
+                                        <form class="wrap_input">
+                                            <div class="col_01">
+                                                <span class="search_label">기관</span>
+                                                <input type="text" class="" placeholder="" value="">
+                                            </div>
+                                        </form>
+                                        
+                                    </div>
+                                    <div class="search_area_right">
+                                        <form class="wrap_input">
+                                            <div class="col_01"><span class="search_label">업무구분</span><select class="search_select">
+                                                    <option value="">전체</option>
+                                                    <option value=""></option>
+                                                    <option value=""></option>
+                                                </select></div>
+                                        </form>
+                                        
+                                        <form class="wrap_input">
+                                            <div class="col_01">
+                                                <span class="search_label">담당자</span>
+                                                <input type="text" class="" placeholder="" value="">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="search_area_bottom">
+                                    <form class="wrap_input">
+                                        <span class="search_label">신청구분</span>
+                                        <div class="radio_wrap"><input type="radio" id="radio01" name="radio-1">
+                                            <label for="radio01">전체</label>
+                                        </div>
+                                        <div class="radio_wrap"><input type="radio" id="radio02" name="radio-1">
+                                            <label for="radio02">신청완료</label>
+                                        </div>
+                                        <div class="radio_wrap"><input type="radio" id="radio03" name="radio-1">
+                                            <label for="radio03">중</label>
+                                        </div>
+                                        <div class="radio_wrap"><input type="radio" id="radio04" name="radio-1">
+                                            <label for="radio04">지연</label>
+                                        </div>
+                                        <div class="radio_wrap"><input type="radio" id="radio05" name="radio-1">
+                                            <label for="radio05">완료</label>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <div class="search_btn_wrap">
+                                <button type="button" class="action_btn btn_filled_deep_blue search_btn"><span>조회하기</span></button>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                        <!-- table_section -->
+                        <div class="table_upper_show">
+                            <p class="search_result_text">조회결과 &nbsp;<span class="search_result">1231</span> 건</p>                       
+                        </div>
+
+                        <div class="wrap_table wrap_table_sticky floor_page_sticky_double">
+                            <!-- table -->      
+                            <table class="table table_list td_padding_small table_sticky">
+                                <caption>나의 신청 내역 목록 테이블</caption>
+                                <colgroup>
+                                    <col style="width: 3%;">
+                                    <col style="width: 3%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col"><input type="checkbox" id="check_all_01"></th>
+                                        <th scope="col">No</th>
+                                        <th scope="col">신청일자</th>
+                                        <th scope="col">항목</th>
+                                        <th scope="col">업무구분</th>
+                                        <th scope="col">기관</th>
+                                        <th scope="col">담당자</th>
+                                        <th scope="col">전화번호</th>
+                                        <th scope="col">상태</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="align_center">
+                                        <td><input type="checkbox" name="chkbox01"></td>
+                                        <td>1</td>
+                                        <td>2023-09-15</td>
+                                        <td>항목</td>
+                                        <td>업무구분</td>
+                                        <td>기관</td>
+                                        <td>담당자</td>
+                                        <td>전화번호</td>
+                                        <td>상태</td>
+                                    </tr>
+                                    <tr class="align_center">
+                                        <td><input type="checkbox" name="chkbox01"></td>
+                                        <td>1</td>
+                                        <td>2023-09-15</td>
+                                        <td>항목</td>
+                                        <td>업무구분</td>
+                                        <td>기관</td>
+                                        <td>담당자</td>
+                                        <td>전화번호</td>
+                                        <td>상태</td>
+                                    </tr>
+                                    <tr class="align_center">
+                                        <td><input type="checkbox" name="chkbox01"></td>
+                                        <td>1</td>
+                                        <td>2023-09-15</td>
+                                        <td>항목</td>
+                                        <td>업무구분</td>
+                                        <td>기관</td>
+                                        <td>담당자</td>
+                                        <td>전화번호</td>
+                                        <td>상태</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        
+                </div>
+                <!-- page content end --> 
+            </div>
+        <!-- wrap_contents end -->
+        </div>
+    <!-- wrapper end -->
+    </div>
+         
+
+    <footer class="footer">
+
+    </footer>
+
+
+
+
+<!-- popup start-->
+
+
+<!-- popup end-->
+</body>
+
+</html>

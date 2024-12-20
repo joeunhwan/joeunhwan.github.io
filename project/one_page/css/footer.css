@@ -1,0 +1,35 @@
+#footer{
+    width: 100%;
+    height: auto;
+    font-family: "Noto Sans KR", serif;
+    border-top: 1px solid #666;
+}
+#footer .footer_inner{
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+}
+#footer .footer_inner .ft_privacy {
+    margin-bottom: 10px;
+}
+#footer .footer_inner .ft_privacy ul{
+    display: flex;
+    justify-content: center;
+}
+#footer .footer_inner .ft_privacy ul li{
+    margin: 0 10px;
+}
+#footer .footer_inner .ft_privacy ul li:hover a{
+    opacity: 0.8;
+}
+#footer .footer_inner .ft_privacy ul li a{
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all .5s ease-in-out;
+}
+#footer .footer_inner .ft_info address{
+    margin-bottom: 10px;
+}
+#footer .footer_inner .ft_info .copyright{
+    font-size: 0.8rem;
+}
