@@ -35,6 +35,21 @@ img {
 }
 
 
+
+/*스크롤바 디자인*/
+body::-webkit-scrollbar {
+    width: 20px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #888888;
+    border-radius: 8px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 8px;
+}
+
+
 /*스파이스크롤*/
 .back-to-position {
     opacity: 0;
@@ -171,7 +186,7 @@ header .header-box .nav .nav-btn {
     width: 100%;
 }
 .visual .inner .text-deco-box .span-white-bar {
-    width: 100%;
+    width: calc(100% + 2px);
     background-color: var(--color-white);
     padding: 10px 0;
     margin-left: -1px;
@@ -275,9 +290,11 @@ header .header-box .nav .nav-btn {
     .visual .inner .text-deco-box .h1-bg {
         height: 100%;
     }
-    /* .visual .inner .text-deco-box .text-deco-bg {
-        right: 1px;
-    } */
+    .visual .inner .text-deco-box .h1-cover {
+        background-color: var(--color-white);
+        height: calc(100% + 2px);
+        position: relative;
+    }
     .visual .inner .text-deco-box .h1-cover h1 {
         font-size: 3rem;
     }
