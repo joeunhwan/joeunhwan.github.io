@@ -589,6 +589,10 @@ header .header-box .nav .nav-btn {
 .work .inner .work-title h1 {
     font-size: 9rem;
 }
+.work .inner .work-des {
+    width: 80%;
+    margin: 0 auto;
+}
 .work .inner .work-des .carousel {
     height: 100vh;
     width: 100%;
@@ -876,6 +880,9 @@ header .header-box .nav .nav-btn {
 @media all and (max-width:479px) {
     .work .inner .work-title h1 {
         font-size: 5rem;
+    }
+    .work .inner .work-des {
+        width: 100%;
     }
     .work .inner .work-des .carousel .list .item .content {
         padding: 10% 5%;
