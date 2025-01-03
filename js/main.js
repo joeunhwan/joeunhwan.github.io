@@ -89,57 +89,79 @@ setTimeout(function(){
 //////////////////////////////////////////////////////////////////////
 
 // WORK 섹션
-//캐러셀 플러그인
+const workEl = document.querySelector('.work-des .work-item');
+const workImgEl = workEl.querySelector('.item-img img')
+let observer1 = new IntersectionObserver((e)=>{
+    e.forEach((imgbox)=>{
+        if(imgbox.isIntersecting){
+            imgbox.target.style.opacity = 1;
+            imgbox.target.style.transform = `rotate(`+ 0 +`deg)`;
+        }else{
+            imgbox.target.style.opacity = 0;
+            imgbox.target.style.transform = `rotate(`+ 8 +`deg)`;
+        }
+    })
+})
 
-//step 1: get DOM
-let nextDom = document.getElementById('next');
-let prevDom = document.getElementById('prev');
+let woItem = document.querySelectorAll('.work-item img');
 
-let carouselDom = document.querySelector('.carousel');
-let SliderDom = carouselDom.querySelector('.carousel .list');
-let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
-let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
-// let timeDom = document.querySelector('.carousel .time');
+observer1.observe(woItem[0])
+observer1.observe(woItem[1])
+observer1.observe(woItem[2])
+observer1.observe(woItem[3])
+observer1.observe(woItem[4])
 
-thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-let timeRunning = 1000;
-// let timeAutoNext = 7000;
+// //캐러셀 플러그인
 
-nextDom.onclick = function(){
-    showSlider('next');    
-}
+// //step 1: get DOM
+// let nextDom = document.getElementById('next');
+// let prevDom = document.getElementById('prev');
 
-prevDom.onclick = function(){
-    showSlider('prev');    
-}
-let runTimeOut;
-// let runNextAuto = setTimeout(() => {
-//     next.click();
-// }, timeAutoNext)
-function showSlider(type){
-    let  SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
-    let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
+// let carouselDom = document.querySelector('.carousel');
+// let SliderDom = carouselDom.querySelector('.carousel .list');
+// let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
+// let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
+// // let timeDom = document.querySelector('.carousel .time');
+
+// thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+// let timeRunning = 1000;
+// // let timeAutoNext = 7000;
+
+// nextDom.onclick = function(){
+//     showSlider('next');    
+// }
+
+// prevDom.onclick = function(){
+//     showSlider('prev');    
+// }
+// let runTimeOut;
+// // let runNextAuto = setTimeout(() => {
+// //     next.click();
+// // }, timeAutoNext)
+// function showSlider(type){
+//     let  SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
+//     let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
     
-    if(type === 'next'){
-        SliderDom.appendChild(SliderItemsDom[0]);
-        thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-        carouselDom.classList.add('next');
-    }else{
-        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
-        thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
-        carouselDom.classList.add('prev');
-    }
-    clearTimeout(runTimeOut);
-    runTimeOut = setTimeout(() => {
-        carouselDom.classList.remove('next');
-        carouselDom.classList.remove('prev');
-    }, timeRunning);
+//     if(type === 'next'){
+//         SliderDom.appendChild(SliderItemsDom[0]);
+//         thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+//         carouselDom.classList.add('next');
+//     }else{
+//         SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
+//         thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
+//         carouselDom.classList.add('prev');
+//     }
+//     clearTimeout(runTimeOut);
+//     runTimeOut = setTimeout(() => {
+//         carouselDom.classList.remove('next');
+//         carouselDom.classList.remove('prev');
+//     }, timeRunning);
 
-    // clearTimeout(runNextAuto);
-    // runNextAuto = setTimeout(() => {
-    //     next.click();
-    // }, timeAutoNext)
-}
+//     // clearTimeout(runNextAuto);
+//     // runNextAuto = setTimeout(() => {
+//     //     next.click();
+//     // }, timeAutoNext)
+// }
 
 //////////////////////////////////////////////////////////////////////
 
@@ -171,3 +193,6 @@ tl.from(".contact-wrap-hidden .contact-box .contact-form", {
     width: "100%",    // 원래 크기로 복원
     opacity: 1
 });
+
+
+

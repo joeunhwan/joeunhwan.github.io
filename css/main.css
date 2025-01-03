@@ -5,6 +5,7 @@ html {
     --color-red: #ff4e50;
     --color-yellow: #f9d423;
     --color-orange: #fc913a;
+    --color-green: #37b75e;
 }
 html,
 body {
@@ -122,6 +123,8 @@ section {
 
 
 
+
+
 /*HEADER*/
 header {
     position: fixed;
@@ -165,6 +168,13 @@ header .header-box .nav .nav-btn {
 .nav-btn span:nth-child(4){
     width: 20px;
 }
+
+@media all and (max-width:1280px) {
+    header .header-box {
+        padding: 15px;
+    }
+}
+
 
 
 /*VISUAL SECTION*/
@@ -282,11 +292,15 @@ header .header-box .nav .nav-btn {
     text-align: center;
     font-size: 2rem;
 }
-/* 모바일 세로 (해상도 ~ 479px)*/
-@media all and (max-width:479px) {
-    .visual .inner .text-deco-box {
+
+@media all and (max-width:1280px) {
+    .visual .inner {
         width: 80%;
     }
+}
+
+/* 모바일 세로 (해상도 ~ 479px)*/
+@media all and (max-width:479px) {
     .visual .inner .text-deco-box .h1-bg {
         height: 100%;
     }
@@ -405,7 +419,22 @@ header .header-box .nav .nav-btn {
     height: auto;
 }
 
-@media all and (max-width:479px) {
+@media all and (max-width:1280px) {
+    .about .inner .about-title-sticky {
+        padding: 125px 70px;
+    }
+    .about .inner .about-title h1 {
+        font-size: 4rem;
+    }
+    .about .inner .about-des .about-item .item-title h2 {
+        font-size: 4rem;
+    }
+    .about .inner .about-des .about-item .item-title p {
+        font-size: 1.2rem;
+    }
+}
+
+@media all and (max-width:980px) {
     .about .inner {
         flex-direction: column;
     }
@@ -418,6 +447,43 @@ header .header-box .nav .nav-btn {
         justify-content: center;
         height: auto;
     }
+    .about .inner .about-title h1 {
+        font-size: 6rem;
+        margin-right: 10px;
+        text-decoration: none;
+        margin-bottom: 0;
+    }
+    .about .inner .about-title h1:last-child {
+        margin-right: 0;
+    }
+    .about .inner .about-des {
+        width: 100%;
+    }
+    .about .inner .about-des .about-item {
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 10% 0;
+    }
+    .about .inner .about-des .about-item .item-title {
+        width: 80%;
+    }
+    .about .inner .about-des .about-item .item-title h2 {
+        font-size: 4rem;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .about .inner .about-des .about-item .item-title p {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .about .inner .about-des .about-item .item-des {
+        margin-bottom: 25px;
+    }
+}
+
+@media all and (max-width:479px) {
     .about .inner .about-title h1 {
         font-size: 3rem;
         margin-right: 10px;
@@ -548,18 +614,35 @@ header .header-box .nav .nav-btn {
     top: 240px;
     z-index: 8;
 }
-@media all and (max-width:479px) {
-    .project .inner .project-title h1 {
-        font-size: 5rem;
+
+@media all and (max-width:1240px) {
+    .project .inner .project-des .item-textbox h2 {
+        font-size: 3rem;
     }
+    .project .inner .project-des .item-textbox p {
+        font-size: 1.1rem;
+    }
+}
+
+@media all and (max-width:980px) {
     .project .inner .project-des .project-item {
         flex-direction: column;
+        text-align: left;
     }
     .project .inner .project-des .item-imgbox {
         width: 100%;
     }
     .project .inner .project-des .item-textbox {
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+}
+
+@media all and (max-width:479px) {
+    .project .inner .project-title h1 {
+        font-size: 5rem;
     }
     .project .inner .project-des .item-textbox h2 {
         font-size: 2rem;
@@ -593,290 +676,111 @@ header .header-box .nav .nav-btn {
     width: 80%;
     margin: 0 auto;
 }
-.work .inner .work-des .carousel {
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+.work-des {
+    width: 80%;
+    margin: 0 auto;
 }
-.work .inner .work-des .carousel .list .item {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    inset: 0 0 0 0;
-}
-.work .inner .work-des .carousel .list .item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.work .inner .work-des .carousel .list .item .content {
-    position: absolute;
-    width: 40%;
-    padding: 5%;
-    top: 20%;
-    left: 5%;
-    background-color: rgba(255, 255, 255, .9);
-    box-sizing: border-box;
-    color: var(--color-black);
-    box-shadow: 0 5px 10px #0006;
-    border-radius: 15px;
-    font-family: 'Gmarket Sans';
-}
-.work .inner .work-des .carousel .list .item .title {
-    display: flex;
-    font-size: 4rem;
-    font-weight: bold;
-    flex-direction: column;
-}
-.work .inner .work-des .carousel .list .item .title h1 {
-    font-size: 3rem;
-    font-weight: 500;
-}
-.work .inner .work-des .carousel .list .item .title strong {
-    color: var(--color-orange);
-    font-size: 2rem;
-    font-weight: 500;
-    display: block;
-    margin-top: 5px;
-}
-.work .inner .work-des .carousel .list .item .des {
-    margin-top: 15px;
-    width: 100%;
-}
-.work .inner .work-des .carousel .list .item .des p {
-    font-size: 1.3rem;
-    line-height: 1.2;
-}
-.work .inner .work-des .carousel .list .item .btns {
-    margin-top: 20px;
-}
-.work .inner .work-des .carousel .list .item .btns a {
-    font-family: "Anton", sans-serif;
-    display: block;
-    width: fit-content;
-    padding: 10px 35px;
-    background-color: transparent;
-    border: 1px solid var(--color-black);
-    color: var(--color-black);
-    font-size: 2rem;
-    transition: .2s;
-}
-.work .inner .work-des .carousel .list .item .btns a:hover {
-    background-color: var(--color-black);
-    color: var(--color-white);
-}
+.work-des .work-item-box {
 
-/* thumbail */
-.thumbnail {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    width: max-content;
-    z-index: 30;
-    display: flex;
-    gap: 20px;
 }
-.thumbnail .item {
-    width: 150px;
-    height: 220px;
-    flex-shrink: 0;
+.work-des .work-item-box .work-item {
+
+}
+.work-des .work-item-box .work-item .item-img {
+    max-height: 540px;
+    transition: 1s all ease-in-out;
     position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-.thumbnail .item img {
+.work-des .work-item-box .work-item .item-img a {
+    position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-.thumbnail .item .content {
+    z-index: 5;
+    transition: .6s;
     color: var(--color-white);
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-}
-.thumbnail .item .content .title {
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-.thumbnail .item .content .description {
-    font-weight: 300;
-    color: #3af1af;
-}
-/* arrows */
-.arrows {
-    position: absolute;
-    top: 70%;
-    left: 5%;
-    z-index: 100;
-    width: 300px;
-    max-width: 30%;
     display: flex;
-    gap: 20px;
+    justify-content: center;
     align-items: center;
-}
-.arrows button {
-    width: 50px;
-    height: 100px;
-    padding: 5px;
-    background-color: #eee4;
-    border: none;
-    transition: .3s;
-}
-.arrows button:hover {
-    background-color: var(--color-white);
-}
-.arrows button img {
-    -webkit-user-drag: none;
-}
-
-/* animation */
-.work .inner .work-des .carousel .list .item:nth-child(1) {
-    z-index: 1;
-}
-
-/* animation text in first item */
-
-.work .inner .work-des .carousel .list .item:nth-child(1) .content .title,
-.work .inner .work-des .carousel .list .item:nth-child(1) .content .des,
-.work .inner .work-des .carousel .list .item:nth-child(1) .content .btns
-{
-    transform: translateY(50px);
-    filter: blur(20px);
     opacity: 0;
-    animation: showContent .5s 1s linear 1 forwards;
+    font-size: 4rem;
 }
-@keyframes showContent {
-    to{
-        transform: translateY(0px);
-        filter: blur(0px);
-        opacity: 1;
-    }
+.work-des .work-item-box .work-item .item-img a:hover {
+    background-color: var(--color-black);
+    opacity: 0.9;
 }
-.work .inner .work-des .carousel .list .item:nth-child(1) .content .title {
-    animation-delay: .5s!important;
+.work-des .work-item-box .work-item .item-img img {
+    width: 100%;
+    transform: rotate(8deg);
+    max-height: 540px;
+    object-fit: cover;
+    transition: 1s all ease-in-out;
 }
-.work .inner .work-des .carousel .list .item:nth-child(1) .content .des {
-    animation-delay: .6s!important;
+.work-des .work-item-box .work-item .item-text-box {
+    display: flex;
+    justify-content: space-between;
 }
-.work .inner .work-des .carousel .list .item:nth-child(1) .content .btns {
-    animation-delay: .8s!important;
+.work-des .work-item-box .work-item .item-text-box .item-text {
+    padding: 40px 0;
 }
-/* create animation when next click */
-.work .inner .work-des .carousel.next .list .item:nth-child(1) img {
-    width: 150px;
-    height: 220px;
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    border-radius: 30px;
-    animation: showImage .5s linear 1 forwards;
+.work-des .work-item-box .work-item .item-text-box .item-text h2 {
+    font-size: 4rem;
+    margin-bottom: 10px;
 }
-@keyframes showImage{
-    to{
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 0;
-    }
+.work-des .work-item-box .work-item .item-text-box .item-text strong {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
 }
-
-.work .inner .work-des .carousel.next .thumbnail .item:nth-last-child(1) {
-    overflow: hidden;
-    animation: showThumbnail .5s linear 1 forwards;
+.work-des .work-item-box .work-item .item-text-box .item-text p {
+    font-family: 'Gmarket Sans';
+    font-size: 1.2rem;
+    letter-spacing: -1px;
 }
-.work .inner .work-des .carousel.prev .list .item img {
-    z-index: 100;
+.work-des .work-item-box .work-item .item-text-box .item-links {
+    width: 50%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
 }
-@keyframes showThumbnail{
-    from{
-        width: 0;
-        opacity: 0;
-    }
+.work-des .work-item-box .work-item .item-text-box .item-links .work-span {
+    padding: 12px;
+    display: block;
+    height: fit-content;
 }
-.work .inner .work-des .carousel.next .thumbnail {
-    animation: effectNext .5s linear 1 forwards;
+.work-des .work-item-box .work-item .item-text-box .item-links .work-span:nth-child(1) {
+    background-color: var(--color-red);
+    color: var(--color-white);
 }
-
-@keyframes effectNext{
-    from{
-        transform: translateX(150px);
-    }
-}
-
-/* running time */
-
-.work .inner .work-des .carousel .time {
-    position: absolute;
-    z-index: 1000;
-    width: 0%;
-    height: 3px;
+.work-des .work-item-box .work-item .item-text-box .item-links .work-span:nth-child(2) {
     background-color: var(--color-orange);
-    left: 0;
-    top: 0;
+    color: var(--color-white);
+}
+.work-des .work-item-box .work-item .item-text-box .item-links .work-span:nth-child(3) {
+    background-color: var(--color-yellow);
+    color: var(--color-white);
+}
+.work-des .work-item-box .work-item .item-text-box .item-links .work-span:nth-child(4) {
+    background-color: var(--color-green);
+    color: var(--color-white);
 }
 
-.work .inner .work-des .carousel.next .time,
-.work .inner .work-des .carousel.prev .time {
-    animation: runningTime 3s linear 1 forwards;
-}
-@keyframes runningTime{
-    from{ width: 100%}
-    to{width: 0}
-}
-
-
-/* prev click */
-
-.work .inner .work-des .carousel.prev .list .item:nth-child(2) {
-    z-index: 2;
-}
-
-.work .inner .work-des .carousel.prev .list .item:nth-child(2) img {
-    animation: outFrame 0.5s linear 1 forwards;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-@keyframes outFrame {
-    to{
-        width: 150px;
-        height: 220px;
-        bottom: 50px;
-        left: 50%;
-        border-radius: 20px;
+@media all and (max-width:980px) {
+    .work-des .work-item-box .work-item .item-text-box {
+        flex-direction: column-reverse;
+    }
+    .work-des .work-item-box .work-item .item-text-box .item-links {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 10px 0;
+    }
+    .work-des .work-item-box .work-item .item-text-box .item-text {
+        padding: 0;
+        margin-bottom: 130px;
     }
 }
 
-.work .inner .work-des .carousel.prev .thumbnail .item:nth-child(1) {
-    overflow: hidden;
-    opacity: 0;
-    animation: showThumbnail .5s linear 1 forwards;
-}
-.work .inner .work-des .carousel.next .arrows button,
-.work .inner .work-des .carousel.prev .arrows button {
-    pointer-events: none;
-}
-.work .inner .work-des .carousel.prev .list .item:nth-child(2) .content .author,
-.work .inner .work-des .carousel.prev .list .item:nth-child(2) .content .title,
-.work .inner .work-des .carousel.prev .list .item:nth-child(2) .content .topic,
-.work .inner .work-des .carousel.prev .list .item:nth-child(2) .content .des,
-.work .inner .work-des .carousel.prev .list .item:nth-child(2) .content .buttons
-{
-    animation: contentOut 1.5s linear 1 forwards!important;
-}
-
-@keyframes contentOut{
-    to{
-        transform: translateY(-150px);
-        filter: blur(20px);
-        opacity: 0;
-    }
-}
 @media all and (max-width:479px) {
     .work .inner .work-title h1 {
         font-size: 5rem;
@@ -884,22 +788,20 @@ header .header-box .nav .nav-btn {
     .work .inner .work-des {
         width: 100%;
     }
-    .work .inner .work-des .carousel .list .item .content {
-        padding: 10% 5%;
-        width: 90%;
+    .work-des .work-item-box .work-item .item-text-box {
+        padding: 5%;
     }
-    .work .inner .work-des .carousel .list .item .title h1 {
+    .work-des .work-item-box .work-item .item-text-box .item-text h2 {
         font-size: 2rem;
     }
-    .work .inner .work-des .carousel .list .item .title strong {
-        font-size: 1.5rem;
+    .work-des .work-item-box .work-item .item-text-box .item-text strong {
+        font-size: 1.7rem;
     }
-    .work .inner .work-des .carousel .list .item .des p {
+    .work-des .work-item-box .work-item .item-text-box .item-text p {
         font-size: 1rem;
     }
-    .work .inner .work-des .carousel .list .item .btns a {
-        font-size: 1.2rem;
-        padding: 10px 25px;
+    .work-des .work-item-box .work-item .item-text-box .item-text {
+        margin-bottom: 70px;
     }
 }
 
@@ -1034,3 +936,4 @@ header .header-box .nav .nav-btn {
         font-size: 1.6rem;
     }
 }
+
