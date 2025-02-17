@@ -36,21 +36,6 @@ img {
 }
 
 
-
-/*스크롤바 디자인*/
-body::-webkit-scrollbar {
-    width: 20px;
-}
-body::-webkit-scrollbar-track {
-    background-color: #888888;
-    border-radius: 8px;
-}
-body::-webkit-scrollbar-thumb {
-    background-color: #333;
-    border-radius: 8px;
-}
-
-
 /*스파이스크롤*/
 .back-to-position {
     opacity: 0;
