@@ -24,6 +24,21 @@ requestAnimationFrame(raf);
 
 //////////////////////////////////////////////////////////////////////
 
+// HEADER 섹션
+// const navBtns = document.getElementsByClassName('nav-btn');
+// const navBg = document.getElementsByTagName('aside')[0];
+
+// Array.from(navBtns).forEach(btn => {
+//     btn.addEventListener('click', () => {
+//         if (navBg) {
+//             navBg.classList.add('active');
+//         }
+//     });
+// });
+
+
+//////////////////////////////////////////////////////////////////////
+
 // VISUAL 섹션
 setTimeout(function(){
     const boxes = document.querySelectorAll('.video-deco');
