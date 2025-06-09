@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PORTFOLIO</title>
 
     <!--OG TAG-->
     <!--OG 태그 생략-->
     <!--OG TAG-->
     <!--RESET CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+      rel="stylesheet"
+    />
     <!--RESET CSS-->
 
     <!--CSS-->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
     <!--CSS-->
 
     <!--SCRIPT-->
@@ -21,31 +24,57 @@
     <!--SCRIPT-->
 
     <!--CDN-->
-    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+      integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+      integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
     <!--CDN-->
 
     <!--FONT CDN-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/leetaewook/gmarket-sans-dynamic-subset/GmarketSans.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/leetaewook/gmarket-sans-dynamic-subset/GmarketSans.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
     <!--FONT CDN-->
-
-</head>
-<body>
+  </head>
+  <body>
     <!--HEADER START-->
     <header>
-        <div class="header-box">
-            <div class="logo">
-                <a href="javascript:void(0)"><img src="./img/logo.png" alt="logo"></a>
-            </div>
-            <!--<div class="nav">
+      <div class="header-box">
+        <div class="logo">
+          <a href="javascript:void(0)"
+            ><img src="./img/logo.png" alt="logo"
+          /></a>
+        </div>
+        <!--<div class="nav">
                 <a href="javascript:void(0)" class="nav-btn">
                     <span></span>
                     <span></span>
@@ -54,385 +83,446 @@
                     <span></span>
                 </a>
             </div>-->
-            <!--api 추가할 시에 nav 추가 예정-->
-        </div>
+        <!--api 추가할 시에 nav 추가 예정-->
+      </div>
     </header>
     <aside>
-        <div class="as-bg"></div>
-        <div></div>
+      <div class="as-bg"></div>
+      <div></div>
     </aside>
     <!--HEADER END-->
 
     <!--VISUAL START-->
     <section id="section1" class="visual scroll-spy">
-        <div class="inner">
-            <div class="text-deco-box">
-                <div class="deco-top">
-                    <div class="h1-bg"></div>
-                    <div class="h1-cover">
-                        <div class="mini-box min1 back-to-position delay-2">BETTER</div>
-                        <h1 class="back-to-position to-bottom delay-2">interactive</h1>
-                    </div>
-                    <div class="video-deco video-deco1"></div>
-                </div>
-                <div class="span-white-bar"></div>
-                <div class="deco-middle">
-                    <div class="h1-bg"></div>
-                    <div class="h1-cover">
-                        <div class="mini-box min2 back-to-position delay-3">WEB</div>
-                        <h1 class="back-to-position to-bottom delay-3">web</h1>
-                    </div>
-                    <div class="video-deco video-deco2"></div>
-                </div>
-                <div class="span-white-bar"></div>
-                <div class="deco-bottom">
-                    <div class="h1-bg"></div>
-                    <div class="h1-cover">
-                        <div class="mini-box min3 back-to-position delay-4">DEVELOPER</div>
-                        <h1 class="back-to-position to-bottom delay-4">PORTFOLIO</h1>
-                    </div>
-                    <div class="video-deco video-deco3"></div>
-                </div>
-                <div class="text-deco-bg">
-                    <video src="./video/intro_2.mp4" loop autoplay muted></video>
-                </div>
+      <div class="inner">
+        <div class="text-deco-box">
+          <div class="deco-top">
+            <div class="h1-bg"></div>
+            <div class="h1-cover">
+              <div class="mini-box min1 back-to-position delay-2">BETTER</div>
+              <h1 class="back-to-position to-bottom delay-2">interactive</h1>
             </div>
-            <div class="text-des">
-                <p class="back-to-position to-bottom delay-5">
-                    I want to have fun with my team members on a wonderful interactive web project
-                </p>
-            </div>            
+            <div class="video-deco video-deco1"></div>
+          </div>
+          <div class="span-white-bar"></div>
+          <div class="deco-middle">
+            <div class="h1-bg"></div>
+            <div class="h1-cover">
+              <div class="mini-box min2 back-to-position delay-3">WEB</div>
+              <h1 class="back-to-position to-bottom delay-3">web</h1>
+            </div>
+            <div class="video-deco video-deco2"></div>
+          </div>
+          <div class="span-white-bar"></div>
+          <div class="deco-bottom">
+            <div class="h1-bg"></div>
+            <div class="h1-cover">
+              <div class="mini-box min3 back-to-position delay-4">
+                DEVELOPER
+              </div>
+              <h1 class="back-to-position to-bottom delay-4">PORTFOLIO</h1>
+            </div>
+            <div class="video-deco video-deco3"></div>
+          </div>
+          <div class="text-deco-bg">
+            <video src="./video/intro_2.mp4" loop autoplay muted></video>
+          </div>
         </div>
+        <div class="text-des">
+          <p class="back-to-position to-bottom delay-5">
+            I want to have fun with my team members on a wonderful interactive
+            web project
+          </p>
+        </div>
+      </div>
     </section>
     <!--VISUAL END-->
 
     <!--ABOUT START-->
     <section id="section2" class="about scroll-spy">
-        <div class="inner">
-            <div class="about-title">
-                <div class="about-title-sticky">
-                    <h1 class="back-to-position to-right delay-1">MY</h1>
-                    <h1 class="back-to-position to-right delay-1">VALUE</h1>
-                    <h1 class="back-to-position to-right delay-1">GOAL</h1>
-                </div>
-            </div>
-            <div class="about-des">
-                <div class="about-item">
-                    <div class="item-title back-to-position to-left delay-2">
-                        <h2>user experience</h2>
-                        <p>
-                            단순히 정보를 전달하는 것이 아닌<br>
-                            사용자 친화적인 웹을 만들고 싶습니다.
-                        </p>
-                    </div>
-                    <div class="item-des">
-                        <img src="./img/about_icon01.png" alt="about 첫번째 이미지">
-                    </div>
-                </div>
-                <div class="about-item">
-                    <div class="item-title back-to-position to-left delay-3">
-                        <h2>sustained growth</h2>
-                        <p>
-                            빠르게 변화하는 웹기술을 받아들여<br>
-                            성장하는 사람이 되고 싶습니다.
-                        </p>
-                    </div>
-                    <div class="item-des">
-                        <img src="./img/about_icon02.png" alt="about 두번째 이미지">
-                    </div>
-                </div>
-                <div class="about-item">
-                    <div class="item-title back-to-position to-left delay-4">
-                        <h2>communication</h2>
-                        <p>
-                            서로의 의견을 존중하며<br>
-                            협력하는 팀원이 되고 싶습니다.
-                        </p>
-                    </div>
-                    <div class="item-des">
-                        <img src="./img/about_icon03.png" alt="about 세번째 이미지">
-                    </div>
-                </div>
-            </div>
+      <div class="inner">
+        <div class="about-title">
+          <div class="about-title-sticky">
+            <h1 class="back-to-position to-right delay-1">MY</h1>
+            <h1 class="back-to-position to-right delay-1">VALUE</h1>
+            <h1 class="back-to-position to-right delay-1">GOAL</h1>
+          </div>
         </div>
+        <div class="about-des">
+          <div class="about-item">
+            <div class="item-title back-to-position to-left delay-2">
+              <h2>user experience</h2>
+              <p>
+                단순히 정보를 전달하는 것이 아닌<br />
+                사용자 친화적인 웹을 만들고 싶습니다.
+              </p>
+            </div>
+            <div class="item-des">
+              <img src="./img/about_icon01.png" alt="about 첫번째 이미지" />
+            </div>
+          </div>
+          <div class="about-item">
+            <div class="item-title back-to-position to-left delay-3">
+              <h2>sustained growth</h2>
+              <p>
+                빠르게 변화하는 웹기술을 받아들여<br />
+                성장하는 사람이 되고 싶습니다.
+              </p>
+            </div>
+            <div class="item-des">
+              <img src="./img/about_icon02.png" alt="about 두번째 이미지" />
+            </div>
+          </div>
+          <div class="about-item">
+            <div class="item-title back-to-position to-left delay-4">
+              <h2>communication</h2>
+              <p>
+                서로의 의견을 존중하며<br />
+                협력하는 팀원이 되고 싶습니다.
+              </p>
+            </div>
+            <div class="item-des">
+              <img src="./img/about_icon03.png" alt="about 세번째 이미지" />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!--ABOUT END-->
 
     <!--PROJECT START-->
     <section id="section3" class="project scroll-spy">
-        <div class="inner">
-            <div class="project-title">
-                <h1 class="back-to-position to-bottom">PROJECT</h1>
-            </div>
-            <div class="project-des">
-                <div class="project-item">
-                    <div class="item-imgbox">
-                        <img src="./img/project02.png" alt="프로젝트 핀고정 두번째 이미지">
-                    </div>
-                    <div class="item-textbox">
-                        <div class="text">
-                            <h2>STARBUCKS CLONE PAGE</h2>
-                            <p>GSAP과 CSS ANIMATION을 적용한 클론 PC 웹</p>
-                        </div>
-                        <div class="btns">
-                            <a href="./project/starbucks/index.html" class="project-btns" target="_blank">VIEW</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="item-imgbox">
-                        <img src="./img/project01.png" alt="프로젝트 핀고정 첫번째 이미지">
-                    </div>
-                    <div class="item-textbox">
-                        <div class="text">
-                            <h2>ADMIN APPLICATION FORM PAGE</h2>
-                            <p>공공기관에서 사용 가능한 신청서 작성 관리자 페이지</p>
-                        </div>
-                        <div class="btns">
-                            <a href="./project/admin/html/RGO_LOGIN-01_로그인.html" class="project-btns" target="_blank">VIEW</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="item-imgbox">
-                        <img src="./img/project03.png" alt="프로젝트 핀고정 세번째 이미지">
-                    </div>
-                    <div class="item-textbox">
-                        <div class="text">
-                            <h2>I-PAD CLONE PAGE</h2>
-                            <p>GSAP과 CSS ANIMATION, SVG를 적용한 반응형 웹</p>
-                        </div>
-                        <div class="btns">
-                            <a href="./project/i_pad/index.html" class="project-btns" target="_blank">VIEW</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="item-imgbox">
-                        <img src="./img/project04.png" alt="프로젝트 핀고정 네번째 이미지">
-                    </div>
-                    <div class="item-textbox">
-                        <div class="text">
-                            <h2>ASTINT WEB</h2>
-                            <p>카페24 플랫폼을 통해 현재 유지보수 진행하고 있는 웹사이트</p>
-                        </div>
-                        <div class="btns">
-                            <a href="https://astint.co.kr/default/" class="project-btns" target="_blank">VIEW</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="item-imgbox">
-                        <img src="./img/project06_1.png" alt="프로젝트 핀고정 여번째 이미지">
-                    </div>
-                    <div class="item-textbox">
-                        <div class="text">
-                            <h2>MOVIE APP</h2>
-                            <p>API를 활용한 영화 검색 사이트</p>
-                        </div>
-                        <div class="btns">
-                            <a href="https://movie-apps-pi.vercel.app/#/" class="project-btns" target="_blank">VIEW</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="item-imgbox">
-                        <img src="./img/project07.png" alt="프로젝트 핀고정 일곱번째 이미지">
-                    </div>
-                    <div class="item-textbox">
-                        <div class="text">
-                            <h2>CSS KEY FRAME PAGE</h2>
-                            <p>CSS ANIMATION KEY FRAME 360도 회전을 적용한 웹</p>
-                        </div>
-                        <div class="btns">
-                            <a href="./project/key_frame/index.html" class="project-btns" target="_blank">VIEW</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="inner">
+        <div class="project-title">
+          <h1 class="back-to-position to-bottom">PROJECT</h1>
         </div>
+        <div class="project-des">
+          <div class="project-item">
+            <div class="item-imgbox">
+              <img
+                src="./img/project06_1.png"
+                alt="프로젝트 핀고정 여번째 이미지"
+              />
+            </div>
+            <div class="item-textbox">
+              <div class="text">
+                <h2>MOVIE APP</h2>
+                <p>API를 활용한 영화 검색 사이트</p>
+              </div>
+              <div class="btns">
+                <a
+                  href="https://movie-apps-pi.vercel.app/#/"
+                  class="project-btns"
+                  target="_blank"
+                  >VIEW</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="item-imgbox">
+              <img
+                src="./img/project07_1.png"
+                alt="프로젝트 핀고정 일곱번째 이미지"
+              />
+            </div>
+            <div class="item-textbox">
+              <div class="text">
+                <h2>POKEMON-TYPE</h2>
+                <p>React를 활용하여 타입별 포켓몬도감</p>
+              </div>
+              <div class="btns">
+                <a
+                  href="https://pokemon-dogam-7f999.web.app/"
+                  class="project-btns"
+                  target="_blank"
+                  >VIEW</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="item-imgbox">
+              <img
+                src="./img/project02.png"
+                alt="프로젝트 핀고정 두번째 이미지"
+              />
+            </div>
+            <div class="item-textbox">
+              <div class="text">
+                <h2>STARBUCKS PAGE</h2>
+                <p>GSAP과 CSS ANIMATION을 적용한 웹</p>
+              </div>
+              <div class="btns">
+                <a
+                  href="./project/starbucks/index.html"
+                  class="project-btns"
+                  target="_blank"
+                  >VIEW</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="item-imgbox">
+              <img
+                src="./img/project01.png"
+                alt="프로젝트 핀고정 첫번째 이미지"
+              />
+            </div>
+            <div class="item-textbox">
+              <div class="text">
+                <h2>ADMIN APPLICATION FORM PAGE</h2>
+                <p>공공기관에서 사용 가능한 신청서 작성 관리자 페이지</p>
+              </div>
+              <div class="btns">
+                <a
+                  href="./project/admin/html/RGO_LOGIN-01_로그인.html"
+                  class="project-btns"
+                  target="_blank"
+                  >VIEW</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="item-imgbox">
+              <img
+                src="./img/project03.png"
+                alt="프로젝트 핀고정 세번째 이미지"
+              />
+            </div>
+            <div class="item-textbox">
+              <div class="text">
+                <h2>I-PAD PAGE</h2>
+                <p>GSAP과 CSS ANIMATION, SVG를 적용한 반응형 웹</p>
+              </div>
+              <div class="btns">
+                <a
+                  href="./project/i_pad/index.html"
+                  class="project-btns"
+                  target="_blank"
+                  >VIEW</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="item-imgbox">
+              <img
+                src="./img/project04.png"
+                alt="프로젝트 핀고정 네번째 이미지"
+              />
+            </div>
+            <div class="item-textbox">
+              <div class="text">
+                <h2>ASTINT WEB</h2>
+                <p>카페24 플랫폼을 통해 현재 유지보수 진행하고 있는 웹사이트</p>
+              </div>
+              <div class="btns">
+                <a
+                  href="https://astint.co.kr/default/"
+                  class="project-btns"
+                  target="_blank"
+                  >VIEW</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!--PROJECT END-->
 
-    <!--WORK START-->   
+    <!--WORK START-->
     <section id="section4" class="work scroll-spy">
-        <div class="inner">
-            <div class="work-title">
-                <h1 class="back-to-position to-bottom">~ 2024 WORK</h1>
-            </div>
-            <div class="work-des">
-                <div class="work-item-box">
-                    <div class="work-item">
-                        <div class="item-img">
-                            <a href="https://www.keis.or.kr/keis/ko/index.do" target="_blank">VIEW</a>
-                            <img src="./img/keis.png" alt="한고원 홈페이지 이미지">
-                        </div>
-                        <div class="item-text-box">
-                            <div class="item-text">
-                                <h2>KEIS</h2>
-                                <strong>한국고용정보원</strong>
-                                <p>
-                                   출장 유지보수 및 웹접근성 작업으로 WA인증 진행, 솔루션 프론트 페이지 유지보수 진행
-                                </p>
-                            </div>
-                            <div class="item-links">
-                                <span class="work-span">HTML</span>
-                                <span class="work-span">CSS</span>
-                                <span class="work-span">JAVASCRIPT</span>
-                                <span class="work-span">CONTRIBUTION 80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work-item">
-                        <div class="item-img">
-                            <a href="https://www.koreanextweb.kr/main.do" target="_blank">VIEW</a>
-                            <img src="./img/koreanextweb.png" alt="차세대 웹기술 지원센터 이미지">
-                        </div>
-                        <div class="item-text-box">
-                            <div class="item-text">
-                                <h2>KOREANEXTWEB</h2>
-                                <strong>차세대 웹기술 지원센터</strong>
-                                <p>
-                                    유지보수 및 웹접근성 작업으로 WA인증 진행, 부분 반응형 웹 작업
-                                </p>
-                            </div>
-                            <div class="item-links">
-                                <span class="work-span">HTML</span>
-                                <span class="work-span">CSS</span>
-                                <span class="work-span">JAVASCRIPT</span>
-                                <span class="work-span">CONTRIBUTION 70%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work-item">
-                        <div class="item-img">
-                            <a href="https://www.kcdrc.kr/" target="_blank">VIEW</a>
-                            <img src="./img/kcdrc.png" alt="콘텐츠 분쟁 조정 위원회 이미지">
-                        </div>
-                        <div class="item-text-box">
-                            <div class="item-text">
-                                <h2>KCDRC</h2>
-                                <strong>콘텐츠 분쟁 조정 위원회</strong>
-                                <p>
-                                    유지보수 및 웹접근성 작업으로 WA인증 진행, 반응형 웹 작업으로 모바일 사용자 접근성 향상 진행
-                                </p>
-                            </div>
-                            <div class="item-links">
-                                <span class="work-span">HTML</span>
-                                <span class="work-span">CSS</span>
-                                <span class="work-span">JAVASCRIPT</span>
-                                <span class="work-span">CONTRIBUTION 80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work-item">
-                        <div class="item-img">
-                            <a href="https://www.naqs.go.kr/main/main.do" target="_blank">VIEW</a>
-                            <img src="./img/nasq.png" alt="국립 농산물 품질 검정 이미지">
-                        </div>
-                        <div class="item-text-box">
-                            <div class="item-text">
-                                <h2>NAQS</h2>
-                                <strong>국립 농산물 품질 검정 관리자 페이지 구축</strong>
-                                <p>
-                                    중간 투입으로 프론트 페이지 구축 60% 기여
-                                </p>
-                            </div>
-                            <div class="item-links">
-                                <span class="work-span">HTML</span>
-                                <span class="work-span">CSS</span>
-                                <span class="work-span">JAVASCRIPT</span>
-                                <span class="work-span">CONTRIBUTION 60%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work-item">
-                        <div class="item-img">
-                            <a href="https://www.incheon.go.kr/hrd/index" target="_blank">VIEW</a>
-                            <img src="./img/incheon.png" alt="인천인재개발원 이미지">
-                        </div>
-                        <div class="item-text-box">
-                            <div class="item-text">
-                                <h2>INCHEON</h2>
-                                <strong>인천 인재개발원</strong>
-                                <p>
-                                    프론트 페이지 유지보수 진행
-                                </p>
-                            </div>
-                            <div class="item-links">
-                                <span class="work-span">HTML</span>
-                                <span class="work-span">CSS</span>
-                                <span class="work-span">JAVASCRIPT</span>
-                                <span class="work-span">CONTRIBUTION 100%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
+      <div class="inner">
+        <div class="work-title">
+          <h1 class="back-to-position to-bottom">~ 2024 WORK</h1>
         </div>
+        <div class="work-des">
+          <div class="work-item-box">
+            <div class="work-item">
+              <div class="item-img">
+                <a
+                  href="https://www.keis.or.kr/keis/ko/index.do"
+                  target="_blank"
+                  >VIEW</a
+                >
+                <img src="./img/keis.png" alt="한고원 홈페이지 이미지" />
+              </div>
+              <div class="item-text-box">
+                <div class="item-text">
+                  <h2>KEIS</h2>
+                  <strong>한국고용정보원</strong>
+                  <p>
+                    출장 유지보수 및 웹접근성 작업으로 WA인증 진행, 솔루션
+                    프론트 페이지 유지보수 진행
+                  </p>
+                </div>
+                <div class="item-links">
+                  <span class="work-span">HTML</span>
+                  <span class="work-span">CSS</span>
+                  <span class="work-span">JAVASCRIPT</span>
+                  <span class="work-span">CONTRIBUTION 80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="work-item">
+              <div class="item-img">
+                <a href="https://www.koreanextweb.kr/main.do" target="_blank"
+                  >VIEW</a
+                >
+                <img
+                  src="./img/koreanextweb.png"
+                  alt="차세대 웹기술 지원센터 이미지"
+                />
+              </div>
+              <div class="item-text-box">
+                <div class="item-text">
+                  <h2>KOREANEXTWEB</h2>
+                  <strong>차세대 웹기술 지원센터</strong>
+                  <p>
+                    유지보수 및 웹접근성 작업으로 WA인증 진행, 부분 반응형 웹
+                    작업
+                  </p>
+                </div>
+                <div class="item-links">
+                  <span class="work-span">HTML</span>
+                  <span class="work-span">CSS</span>
+                  <span class="work-span">JAVASCRIPT</span>
+                  <span class="work-span">CONTRIBUTION 70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="work-item">
+              <div class="item-img">
+                <a href="https://www.kcdrc.kr/" target="_blank">VIEW</a>
+                <img
+                  src="./img/kcdrc.png"
+                  alt="콘텐츠 분쟁 조정 위원회 이미지"
+                />
+              </div>
+              <div class="item-text-box">
+                <div class="item-text">
+                  <h2>KCDRC</h2>
+                  <strong>콘텐츠 분쟁 조정 위원회</strong>
+                  <p>
+                    유지보수 및 웹접근성 작업으로 WA인증 진행, 반응형 웹
+                    작업으로 모바일 사용자 접근성 향상 진행
+                  </p>
+                </div>
+                <div class="item-links">
+                  <span class="work-span">HTML</span>
+                  <span class="work-span">CSS</span>
+                  <span class="work-span">JAVASCRIPT</span>
+                  <span class="work-span">CONTRIBUTION 80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="work-item">
+              <div class="item-img">
+                <a href="https://www.naqs.go.kr/main/main.do" target="_blank"
+                  >VIEW</a
+                >
+                <img src="./img/nasq.png" alt="국립 농산물 품질 검정 이미지" />
+              </div>
+              <div class="item-text-box">
+                <div class="item-text">
+                  <h2>NAQS</h2>
+                  <strong>국립 농산물 품질 검정 관리자 페이지 구축</strong>
+                  <p>중간 투입으로 프론트 페이지 구축 60% 기여</p>
+                </div>
+                <div class="item-links">
+                  <span class="work-span">HTML</span>
+                  <span class="work-span">CSS</span>
+                  <span class="work-span">JAVASCRIPT</span>
+                  <span class="work-span">CONTRIBUTION 60%</span>
+                </div>
+              </div>
+            </div>
+            <div class="work-item">
+              <div class="item-img">
+                <a href="https://www.incheon.go.kr/hrd/index" target="_blank"
+                  >VIEW</a
+                >
+                <img src="./img/incheon.png" alt="인천인재개발원 이미지" />
+              </div>
+              <div class="item-text-box">
+                <div class="item-text">
+                  <h2>INCHEON</h2>
+                  <strong>인천 인재개발원</strong>
+                  <p>프론트 페이지 유지보수 진행</p>
+                </div>
+                <div class="item-links">
+                  <span class="work-span">HTML</span>
+                  <span class="work-span">CSS</span>
+                  <span class="work-span">JAVASCRIPT</span>
+                  <span class="work-span">CONTRIBUTION 100%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!--WORK END-->
 
     <!--SCORLL TEXT & CONTACT START-->
     <section id="section5" class="contact scroll-spy">
-        <div class="contact-title">
-            <h1 class="back-to-position to-bottom">CONTACT</h1>
+      <div class="contact-title">
+        <h1 class="back-to-position to-bottom">CONTACT</h1>
+      </div>
+      <div class="contact-wrap">
+        <div class="title-box">
+          <div class="text-loop-box">
+            <div class="text-loop">
+              <ul class="loop1">
+                <li>Thank you for watching</li>
+                <li>Thank you for watching</li>
+                <li>Thank you for watching</li>
+                <li>Thank you for watching</li>
+                <li>Thank you for watching</li>
+                <li>Thank you for watching</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="contact-wrap">
-            <div class="title-box">
-                <div class="text-loop-box">
-                    <div class="text-loop">
-                        <ul class="loop1">
-                            <li>Thank you for watching</li>
-                            <li>Thank you for watching</li>
-                            <li>Thank you for watching</li>
-                            <li>Thank you for watching</li>
-                            <li>Thank you for watching</li>
-                            <li>Thank you for watching</li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="contact-wrap-hidden">
+          <div class="contact-box">
+            <!-- <img src="./img/about_icon01.png"> -->
+            <div class="contact-form">
+              <ul>
+                <li>
+                  <span>{/} JO EUN HWAN {/}</span>
+                </li>
+                <li>
+                  <span>E-mail : eunhwan119@gmail.com</span>
+                </li>
+                <li>
+                  <span>Phone : 010-4526-6704</span>
+                </li>
+              </ul>
             </div>
-            <div class="contact-wrap-hidden">
-                <div class="contact-box">
-                    <!-- <img src="./img/about_icon01.png"> -->
-                    <div class="contact-form">
-                        <ul>
-                            <li>
-                                <span>{/} JO EUN HWAN {/}</span>
-                            </li>
-                            <li>
-                                <span>E-mail : eunhwan119@gmail.com</span>
-                            </li>
-                            <li>
-                                <span>Phone : 010-4526-6704</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="title-box">
-                <div class="text-loop-box">
-                    <div class="text-loop">
-                        <ul class="loop2">
-                            <li>Thank you for watching</li>
-                            <li>Thank you for watching</li>
-                            <li>Thank you for watching</li>
-                            <li>Thank you for watching</li>
-                            <li>Thank you for watching</li>
-                            <li>Thank you for watching</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        
+        <div class="title-box">
+          <div class="text-loop-box">
+            <div class="text-loop">
+              <ul class="loop2">
+                <li>Thank you for watching</li>
+                <li>Thank you for watching</li>
+                <li>Thank you for watching</li>
+                <li>Thank you for watching</li>
+                <li>Thank you for watching</li>
+                <li>Thank you for watching</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!--SCORLL TEXT & CONTACT END-->
-    <script>
-        
-        
-    </script>
-</body>
+    <script></script>
+  </body>
 </html>
