@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@100..1000&family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "gsap": "https://cdn.skypack.dev/gsap",
+          "gsap/ScrollTrigger": "https://cdn.skypack.dev/gsap/ScrollTrigger",
+          "gsap/CustomEase": "https://cdn.skypack.dev/gsap/CustomEase",
+          "gsap/SplitText": "https://cdn.skypack.dev/gsap/SplitText"
+        }
+      }
+    </script>
+    <script type="module" src="script.js"></script>
+    <title>PORTFOLIO</title>
+  </head>
+  <body>
+    <!--네비게이션 시작-->
+    <nav>
+      <div class="nav-logo">
+        <a href="javascript:void(0);">MOTION</a>
+      </div>
+      <div class="nav-items">
+        <ul>
+          <li><a href="#first">First</a></li>
+          <li><a href="#second">Second</a></li>
+          <li><a href="#third">Third</a></li>
+          <li><a href="#fourth">Fourth</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--네비게이션 끝-->
+
+    <!--섹션1 시작-->
+    <section class="section1" id="first">
+      <div class="section1-overlay">
+        <div class="section1-counter">
+          <h1>0</h1>
+        </div>
+
+        <div class="section1-overlay-text-container">
+          <div class="section1-overlay-text">
+            <p>ONE</p>
+            <p>TWO</p>
+            <p>THREE</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section1-imgs">
+        <div class="img"><img src="./asset/1.jpg" alt="1번 이미지" /></div>
+        <div class="img"><img src="./asset/2.jpg" alt="2번 이미지" /></div>
+        <div class="img main-img">
+          <img src="./asset/3.jpg" alt="3번 이미지" />
+        </div>
+        <div class="img"><img src="./asset/4.jpg" alt="4번 이미지" /></div>
+        <div class="img"><img src="./asset/5.jpg" alt="5번 이미지" /></div>
+      </div>
+
+      <div class="section1-header">
+        <h1>Beyond<br />the Surface</h1>
+      </div>
+    </section>
+    <!--섹션1 끝-->
+
+    <!--섹션2 시작-->
+    <section class="section2" id="second">
+      <div class="section2-container"></div>
+      <div class="section2-content">
+        <div class="about-wrapper">
+          <span class="label">ABOUT ME</span>
+          <h2 class="title">Crafting Motion & Code</h2>
+          <p class="description">
+            사용자의 시선을 사로잡는 인터랙션과 <br />
+            흥미로운 코드를 통해 브랜드의 가치를 전달합니다.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--섹션2 끝-->
+
+    <!--섹션 사이 텍스트 시작-->
+    <section class="section-scroll">
+      <div class="scroll-row left">
+        <div class="scroll-text">
+          DESIGN MOTION CODE PORTFOLIO DESIGN MOTION CODE
+        </div>
+      </div>
+
+      <div class="scroll-row right">
+        <div class="scroll-text">
+          EXPERIENCE INTERACTION CREATIVE EXPERIENCE INTERACTION
+        </div>
+      </div>
+    </section>
+    <!--섹션 사이 텍스트 끝-->
+
+    <!--섹션3 시작-->
+    <section class="section3" id="third">
+      <div class="project-wrapper">
+        <div class="project-card">
+          <div class="project-img">
+            <img src="./asset/1.jpg" alt="Project 1" />
+          </div>
+          <div class="project-info">
+            <h3>PROJECT ONE</h3>
+            <p>Creative Design & Motion</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+            <img src="./asset/2.jpg" alt="Project 2" />
+          </div>
+          <div class="project-info">
+            <h3>PROJECT TWO</h3>
+            <p>Frontend Development</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+            <img src="./asset/4.jpg" alt="Project 3" />
+          </div>
+          <div class="project-info">
+            <h3>PROJECT THREE</h3>
+            <p>Interaction Web</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+            <img src="./asset/5.jpg" alt="Project 4" />
+          </div>
+          <div class="project-info">
+            <h3>PROJECT FOUR</h3>
+            <p>UI/UX Design</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--섹션3 끝-->
+
+    <!--푸터 시작-->
+    <footer class="section4" id="fourth">
+      <div class="footer-title">
+        <h2>LET'S WORK TOGETHER</h2>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://joeunhwan.github.io/" class="email"
+          >joeunhwan.github.io</a
+        >
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copy">
+          <p>© 2025 JO EUN HWAN. ALL RIGHTS RESERVED.</p>
+        </div>
+        <div class="go-top">
+          <a href="#first" style="color: #888">BACK TO TOP ↑</a>
+        </div>
+      </div>
+    </footer>
+    <!--푸터 끝-->
+  </body>
+</html>

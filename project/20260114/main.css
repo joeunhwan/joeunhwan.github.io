@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+  --light: #fff;
+  --dark: #0f0f0f;
+}
+
+html,
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  font-family: "DM sans", sans-serif;
+  overscroll-behavior-y: none;
+  margin: 0;
+  padding: 0;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a,
+p {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "DM Mono", monospace;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.25;
+  color: #000;
+}
+.no-scroll {
+  overflow: hidden;
+  height: 100svh; /* 현재 화면 높이에 고정하여 스크롤 차단 */
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 50;
+}
+
+.nav-logo a {
+  font-size: 4rem;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.nav-items a {
+  cursor: pointer;
+  display: block;
+}
+
+nav .nav-logo a,
+.nav-items a {
+  color: var(--dark);
+  transition: color 0.3s ease;
+}
+
+nav.inverted .nav-logo a,
+nav.inverted .nav-items a {
+  color: var(--light) !important;
+}
+
+@media (max-width: 1000px) {
+  .nav-logo a {
+    font-size: 2rem;
+  }
+}
+
+/*section1 시작*/
+/*section1 시작*/
+
+.section1 {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.section1 .section1-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100svh;
+  background-color: var(--dark);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  will-change: clip-path;
+  z-index: 0;
+}
+
+.section1-overlay .section1-counter {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  color: var(--light);
+}
+
+.section1-overlay .section1-counter h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.section1-overlay-text-container {
+  position: absolute;
+  /* top: 2rem;
+  left: 2rem;
+  overflow: hidden; */
+  top: 25%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  overflow: hidden;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+}
+
+.section1-overlay-text-container .section1-overlay-text {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(6rem);
+  /* transform: translateY(2rem);
+  will-change: transform; */
+}
+
+.section1-overlay-text-container .section1-overlay-text p {
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  font-size: 5rem;
+  height: 6rem;
+  justify-content: center;
+}
+
+.section1-imgs {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 10vw;
+  will-change: gap;
+}
+
+.section1-imgs .img {
+  width: 10vw;
+  aspect-ratio: 5/7;
+  transform: translateY(50%) scale(0.5);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  opacity: 0;
+  will-change: opacity, transform, clip-path;
+}
+
+.section1-header {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+  z-index: -1;
+}
+
+.section1-header h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 17vw;
+  font-weight: 500;
+  line-height: 0.85;
+}
+
+.section1-header h1 .word {
+  transform: translateY(100%);
+  will-change: transform;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    padding: 1rem;
+  }
+
+  .section1-overlay .section1-counter {
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  .section1-imgs {
+    padding: 0 0.5rem;
+    gap: 2.5vw;
+  }
+
+  .section1-imgs .img {
+    width: 20vw;
+  }
+}
+
+/*section1 끝*/
+/*section1 끝*/
+
+/*section2 시작*/
+/*section2 시작*/
+
+.section2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /* 커튼이 밖으로 나가지 않게 */
+  background-color: var(--light); /* 기본 배경색 */
+}
+
+.section2-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark);
+  transform: translateX(100%); /* 처음에는 오른쪽 끝에 숨김 */
+  z-index: 1;
+}
+
+.section2-content {
+  position: relative;
+  z-index: 2; /* 콘텐츠는 커튼보다 위에 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: var(--light); /* 배경이 검은색이 될 테니 글자는 흰색으로 */
+  opacity: 0; /* 처음엔 안 보이게 */
+}
+
+.section2-content .about-wrapper {
+  text-align: center;
+  max-width: 800px;
+}
+
+.section2-content .label {
+  font-family: "DM Mono", monospace;
+  font-size: 1rem;
+  color: #838383;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.section2-content .title {
+  font-size: 5vw;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.section2-content .description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-transform: none;
+  color: var(--light);
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/*section2 끝*/
+/*section2 끝*/
+
+/*섹션 사이 텍스트 시작*/
+
+.section-scroll {
+  overflow-x: hidden; /* 가로 스크롤 방지 */
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+  background-color: var(--light);
+}
+
+.scroll-row {
+  display: flex;
+  white-space: nowrap;
+  font-size: 8vw;
+  font-weight: 900;
+  line-height: 1.2;
+  color: var(--dark);
+}
+
+/* 왼쪽으로 움직일 줄의 초기 위치 */
+.scroll-row.left {
+  transform: translateX(0%);
+}
+
+/* 오른쪽으로 움직일 줄의 초기 위치 (왼쪽으로 밀어둠) */
+.scroll-row.right {
+  transform: translateX(-50%);
+}
+
+/*섹션 사이 텍스트 끝*/
+
+/*section3 시작*/
+/*section3 시작*/
+
+.section3 {
+  width: 100%;
+  height: 100vh; /* 화면 높이에 맞춤 */
+  display: flex;
+  align-items: center; /* 카드를 수직 중앙 정렬 */
+  background-color: var(--light);
+  overflow: hidden;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.project-wrapper {
+  display: flex;
+  gap: 4vw;
+  padding: 0 5vw;
+  /* 스크롤 애니메이션을 위해 초기 위치를 오른쪽으로 살짝 밀어둡니다 */
+  will-change: transform;
+}
+
+.project-card {
+  flex-shrink: 0; /* 카드가 찌그러지지 않게 고정 */
+  width: 30vw; /* 화면 너비의 30% 차지 */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  background-color: #eee; /* 이미지 로딩 전 대비 */
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-card:hover .project-img img {
+  transform: scale(1.08); /* 호버 시 부드러운 확대 */
+}
+
+.project-info h3 {
+  font-family: "DM Sans", "Noto Sans KR", sans-serif;
+  font-size: 1.8vw;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.project-info p {
+  font-family: "DM Mono", "Noto Sans KR", monospace;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 1000px) {
+  .project-card {
+    width: 70vw; /* 모바일에서는 카드를 크게 보이게 */
+  }
+}
+
+/*section3 끝*/
+/*section3 끝*/
+
+/*section4 시작*/
+/*section4 시작*/
+
+.section4 {
+  background-color: var(--dark);
+  color: var(--light);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.footer-title h2 {
+  font-size: 14vw;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1;
+  margin-top: 12vh;
+  letter-spacing: -0.9vw;
+}
+
+.footer-links {
+  text-align: center;
+}
+
+.footer-links .email {
+  font-size: 3.5vw;
+  color: var(--light);
+  font-family: "DM Mono", "Noto Sans KR", monospace;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.footer-links .email:hover {
+  opacity: 0.5;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 1px solid #333;
+  padding-top: 2rem;
+  /* margin-bottom 대신 padding-bottom 사용 */
+  padding-bottom: 2rem;
+  margin-bottom: 0;
+}
+
+.footer-bottom p {
+  color: #888;
+  font-size: 0.8rem;
+  text-transform: none;
+}
+
+@media (max-width: 1000px) {
+  .section4 {
+    justify-content: end;
+    gap: 20%;
+  }
+}
+
+/*section4 끝*/
+/*section4 끝*/
